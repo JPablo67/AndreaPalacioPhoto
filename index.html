@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrea Palacio | Commercial & Editorial Photography · Monterrey · Houston</title>
+    <meta name="description" content="Elevated visual storytelling for brands that demand more. Commercial & editorial photographer specializing in hospitality, restaurants, real estate, and brand campaigns in Monterrey and Houston." />
+    <link rel="canonical" href="https://andreapalacio.art" />
+    <link rel="alternate" hreflang="en" href="https://andreapalacio.art" />
+    <link rel="alternate" hreflang="es" href="https://andreapalacio.art?lang=es" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Anti-flash: set theme before CSS loads -->
+    <script>
+      (function() {
+        var t = localStorage.getItem('ap-theme');
+        if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/animations.css" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "additionalType": "https://schema.org/Photographer",
+      "name": "Andrea Palacio Photography",
+      "description": "Commercial & editorial photographer specializing in hotels, restaurants, real estate, and brand campaigns in Monterrey and Houston",
+      "url": "https://andreapalacio.art",
+      "areaServed": [
+        { "@type": "City", "name": "Monterrey", "containedInPlace": { "@type": "Country", "name": "Mexico" } },
+        { "@type": "City", "name": "Houston", "containedInPlace": { "@type": "AdministrativeArea", "name": "Texas" } }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/andreapalacioblog"
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Photography" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real Estate Photography" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hotel & Hospitality Photography" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Restaurant & Food Photography" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Campaign Content Creation" } }
+      ]
+    }
+    </script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION                                   -->
+    <!-- ============================================ -->
+    <header id="site-header" class="site-header">
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#hero" class="nav-logo" id="nav-logo">
+          <span class="logo-text">ANDREA PALACIO</span>
+        </a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+          <ul class="nav-links">
+            <li class="nav-item has-dropdown">
+              <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+              <ul class="nav-dropdown" id="portfolio-dropdown">
+                <li><a href="#portfolio" data-filter="editorial" class="dropdown-link" data-i18n="nav.editorial">Editorial & Fashion</a></li>
+                <li><a href="#portfolio" data-filter="hospitality" class="dropdown-link" data-i18n="nav.hospitality">Hotels & Hospitality</a></li>
+                <li><a href="#portfolio" data-filter="food" class="dropdown-link" data-i18n="nav.food">Restaurants & Food</a></li>
+                <li><a href="#portfolio" data-filter="realestate" class="dropdown-link" data-i18n="nav.realestate">Real Estate & Architecture</a></li>
+                <li><a href="#portfolio" data-filter="brand" class="dropdown-link" data-i18n="nav.brand">Brand Campaigns</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+            <li class="nav-item"><a href="/blog/" class="nav-link" data-i18n="nav.journal">Journal</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div id="lang-toggle" class="lang-toggle" role="group" aria-label="Switch language">
+              <button type="button" class="lang-option active" data-lang="en" aria-pressed="true">EN</button>
+              <span class="lang-divider" aria-hidden="true">|</span>
+              <button type="button" class="lang-option" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+              <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+            <a href="#contact" class="btn btn-primary btn-sm nav-cta" id="nav-cta" data-i18n="nav.cta">Book Your Shoot</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ============================================ -->
+      <!-- SECTION 1: HERO                              -->
+      <!-- ============================================ -->
+      <section id="hero" class="hero-section">
+        <div class="hero-bg" id="hero-slideshow">
+          <!-- Slides will be injected dynamically by JS -->
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow anim-fade-up" data-i18n="hero.eyebrow">Commercial & Editorial Photography</p>
+          <h1 class="hero-headline anim-fade-up anim-delay-1" data-i18n="hero.headline">Elevated Visual<br>Storytelling</h1>
+          <p class="hero-subheadline anim-fade-up anim-delay-2" data-i18n="hero.subheadline">Monterrey · Houston</p>
+          <div class="hero-ctas anim-fade-up anim-delay-3">
+            <a href="#contact" class="btn btn-primary" id="hero-cta-primary" data-i18n="hero.cta_primary">Start a Project</a>
+            <a href="#portfolio" class="btn btn-ghost" id="hero-cta-secondary" data-i18n="hero.cta_secondary">View Portfolio</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 2: PORTFOLIO                         -->
+      <!-- ============================================ -->
+      <section id="portfolio" class="portfolio-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="portfolio.label">Selected Work</p>
+            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+          </div>
+
+          <div class="portfolio-filters anim-fade-up anim-delay-1" id="portfolio-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter_all">All</button>
+            <button class="filter-btn" data-filter="editorial" data-i18n="portfolio.filter_editorial">Editorial</button>
+            <button class="filter-btn" data-filter="hospitality" data-i18n="portfolio.filter_hospitality">Hospitality</button>
+            <button class="filter-btn" data-filter="food" data-i18n="portfolio.filter_food">Food</button>
+            <button class="filter-btn" data-filter="realestate" data-i18n="portfolio.filter_realestate">Real Estate</button>
+            <button class="filter-btn" data-filter="brand" data-i18n="portfolio.filter_brand">Brand</button>
+          </div>
+
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Populated by JS from portfolio data -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 3: SERVICES                          -->
+      <!-- ============================================ -->
+      <section id="services" class="services-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="services.label">What I Offer</p>
+            <h2 class="section-title" data-i18n="services.title">Services</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Premium visual content that elevates your brand and drives results.</p>
+          </div>
+
+          <div class="services-grid" id="services-grid">
+            <article class="service-card anim-fade-up" data-service="editorial">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4L28 16H40L30 24L34 36L24 28L14 36L18 24L8 16H20L24 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.editorial.title">Editorial & Fashion</h3>
+              <p class="service-desc" data-i18n="services.editorial.desc">High-end editorial portraits, fashion lookbooks, and beauty campaigns that command attention.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+
+            <article class="service-card anim-fade-up anim-delay-1" data-service="hospitality">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="14" width="36" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 22H42M16 14V10M32 14V10" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.hospitality.title">Hotels & Hospitality</h3>
+              <p class="service-desc" data-i18n="services.hospitality.desc">Capturing luxury, ambiance, and the guest experience for hotels, resorts, and spas.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+
+            <article class="service-card anim-fade-up anim-delay-2" data-service="food">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="26" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M14 26C14 20.477 18.477 16 24 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="8" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.food.title">Restaurants & Food</h3>
+              <p class="service-desc" data-i18n="services.food.desc">Menu photography, restaurant atmosphere, chef portraits, and social media content.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+
+            <article class="service-card anim-fade-up" data-service="realestate">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 42V20L24 6L42 20V42H30V30H18V42H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.realestate.title">Real Estate & Architecture</h3>
+              <p class="service-desc" data-i18n="services.realestate.desc">Property listings, interior design, architectural detail, and twilight exteriors.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+
+            <article class="service-card anim-fade-up anim-delay-1" data-service="brand">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 32L18 22L26 30L34 20L40 26" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="32" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.brand.title">Brand Campaigns</h3>
+              <p class="service-desc" data-i18n="services.brand.desc">Product photography, social media campaigns, and branded content production.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+
+            <article class="service-card anim-fade-up anim-delay-2" data-service="content">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="36" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M18 12H30M18 18H30M18 24H26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="service-title" data-i18n="services.content.title">Content Creation</h3>
+              <p class="service-desc" data-i18n="services.content.desc">Social-media-ready visual packages combining photography with strategic storytelling.</p>
+              <a href="#contact" class="service-link" data-i18n="services.learn_more">Learn More →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 4: ABOUT                             -->
+      <!-- ============================================ -->
+      <section id="about" class="about-section section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image anim-fade-up">
+              <div class="about-portrait" id="about-portrait">
+                <!-- Portrait image via CSS background -->
+              </div>
+            </div>
+            <div class="about-content anim-fade-up anim-delay-1">
+              <p class="section-label" data-i18n="about.label">About</p>
+              <h2 class="section-title" data-i18n="about.title">The Eye Behind the Lens</h2>
+              <p class="about-bio" data-i18n="about.bio_1">I'm Andrea Palacio — a commercial and editorial photographer based between Monterrey and Houston. I specialize in creating elevated visual narratives that help brands tell their story with intention and artistry.</p>
+              <p class="about-bio" data-i18n="about.bio_2">With a background rooted in editorial fashion and a passion for luxury aesthetics, I bring a director's eye to every project — whether it's a five-star hotel, a chef-driven restaurant, or a bold brand campaign.</p>
+              <p class="about-bio" data-i18n="about.bio_3">My dual-market presence in Mexico and the United States gives me a versatile, global perspective that resonates with international brands seeking authentic visual storytelling.</p>
+
+              <div class="about-stats" id="about-stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-target="64" data-suffix="K+">0</span>
+                  <span class="stat-label" data-i18n="about.stat_followers">Followers</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="200" data-suffix="+">0</span>
+                  <span class="stat-label" data-i18n="about.stat_projects">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="8" data-suffix="+">0</span>
+                  <span class="stat-label" data-i18n="about.stat_years">Years</span>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 5: TESTIMONIALS                      -->
+      <!-- ============================================ -->
+      <section id="testimonials" class="testimonials-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="testimonials.label">Client Stories</p>
+            <h2 class="section-title" data-i18n="testimonials.title">Kind Words</h2>
+          </div>
+
+          <div class="testimonial-carousel anim-fade-up anim-delay-1" id="testimonial-carousel" aria-label="Testimonials carousel" aria-live="polite">
+            <div class="testimonial-track" id="testimonial-track">
+              <div class="testimonial-card" data-index="0">
+                <blockquote class="testimonial-quote" data-i18n="testimonials.t1.quote">"Andrea's ability to capture the essence of our hotel transformed our visual identity. The images she delivered exceeded every expectation and have driven a measurable increase in bookings."</blockquote>
+                <div class="testimonial-author">
+                  <span class="author-name" data-i18n="testimonials.t1.name">María González</span>
+                  <span class="author-title" data-i18n="testimonials.t1.title">Director of Marketing, Grand Hotel Monterrey</span>
+                </div>
+              </div>
+              <div class="testimonial-card" data-index="1">
+                <blockquote class="testimonial-quote" data-i18n="testimonials.t2.quote">"Working with Andrea felt like collaborating with a creative director, not just a photographer. She understood our brand before we could even articulate it ourselves."</blockquote>
+                <div class="testimonial-author">
+                  <span class="author-name" data-i18n="testimonials.t2.name">Carlos Mendoza</span>
+                  <span class="author-title" data-i18n="testimonials.t2.title">Founder, Lumière Restaurant Group</span>
+                </div>
+              </div>
+              <div class="testimonial-card" data-index="2">
+                <blockquote class="testimonial-quote" data-i18n="testimonials.t3.quote">"The editorial quality Andrea brings to commercial work is unmatched. Our properties have never looked this good — her eye for composition and light is extraordinary."</blockquote>
+                <div class="testimonial-author">
+                  <span class="author-name" data-i18n="testimonials.t3.name">Sarah Chen</span>
+                  <span class="author-title" data-i18n="testimonials.t3.title">VP Creative, Prestige Real Estate Houston</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-controls">
+              <button id="testimonial-prev" class="carousel-btn" aria-label="Previous testimonial">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+              </div>
+              <button id="testimonial-next" class="carousel-btn" aria-label="Next testimonial">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 6: JOURNAL / BLOG                    -->
+      <!-- ============================================ -->
+      <section id="journal" class="journal-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="journal.label">Insights & Stories</p>
+            <h2 class="section-title" data-i18n="journal.title">Journal</h2>
+          </div>
+
+          <div class="journal-grid anim-fade-up anim-delay-1" id="journal-grid">
+            <!-- Populated by JS -->
+          </div>
+
+          <div class="journal-cta anim-fade-up anim-delay-2">
+            <a href="/blog/" class="btn btn-ghost" id="journal-view-all" data-i18n="journal.view_all">View All Posts</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- SECTION 7: CONTACT                           -->
+      <!-- ============================================ -->
+      <section id="contact" class="contact-section section">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info anim-fade-up">
+              <p class="section-label" data-i18n="contact.label">Get in Touch</p>
+              <h2 class="section-title" data-i18n="contact.title">Let's Create<br>Something Beautiful</h2>
+              <p class="contact-desc" data-i18n="contact.desc">Ready to bring your vision to life? Tell me about your project and I'll get back to you within 24 hours.</p>
+              <div class="contact-details">
+                <a href="mailto:hello@andreapalacio.art" class="contact-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+                  hello@andreapalacio.art
+                </a>
+                <a href="https://www.instagram.com/andreapalacioblog" target="_blank" rel="noopener" class="contact-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+                  @andreapalacioblog
+                </a>
+              </div>
+            </div>
+
+            <form id="inquiry-form" class="inquiry-form anim-fade-up anim-delay-1" data-endpoint="/api/inquiry" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" data-i18n="contact.form.name">Full Name *</label>
+                  <input type="text" id="form-name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="form-email" data-i18n="contact.form.email">Email *</label>
+                  <input type="email" id="form-email" name="email" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="form-phone" data-i18n="contact.form.phone">Phone (Optional)</label>
+                <div class="phone-input-group">
+                  <select id="form-phone-prefix" name="phonePrefix" class="phone-prefix">
+                    <option value="+52">+52 (Mexico)</option>
+                    <option value="+1">+1 (US / Canada)</option>
+                    <option value="+57">+57 (Colombia)</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <input type="tel" id="form-phone" name="phone" autocomplete="tel" placeholder="Phone Number" />
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="form-details" data-i18n="contact.form.details">Tell me about your project (Optional)</label>
+                <textarea id="form-details" name="details" rows="4"></textarea>
+              </div>
+
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="form-website">Website</label>
+                <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="form-submit" data-i18n="contact.form.submit">Send Inquiry</button>
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer id="site-footer" class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">ANDREA PALACIO</span>
+            <p class="footer-tagline" data-i18n="footer.tagline">Elevated Visual Storytelling</p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/andreapalacioblog" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav">
+            <h4 class="footer-heading" data-i18n="footer.nav_heading">Navigation</h4>
+            <ul>
+              <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+              <li><a href="#services" data-i18n="nav.services">Services</a></li>
+              <li><a href="#about" data-i18n="nav.about">About</a></li>
+              <li><a href="/blog/" data-i18n="nav.journal">Journal</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h4 class="footer-heading" data-i18n="footer.services_heading">Services</h4>
+            <ul>
+              <li><a href="#services" data-i18n="services.editorial.title">Editorial & Fashion</a></li>
+              <li><a href="#services" data-i18n="services.hospitality.title">Hotels & Hospitality</a></li>
+              <li><a href="#services" data-i18n="services.food.title">Restaurants & Food</a></li>
+              <li><a href="#services" data-i18n="services.realestate.title">Real Estate & Architecture</a></li>
+              <li><a href="#services" data-i18n="services.brand.title">Brand Campaigns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-heading" data-i18n="footer.contact_heading">Contact</h4>
+            <p>hello@andreapalacio.art</p>
+            <p class="footer-location" data-i18n="footer.locations">Monterrey, MX & Houston, TX</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">© 2026 Andrea Palacio Photography. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-category" aria-hidden="true" tabindex="-1" hidden>
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+      <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        <div class="lightbox-info">
+          <h3 id="lightbox-title" class="lightbox-title"></h3>
+          <p id="lightbox-category" class="lightbox-category"></p>
+          <a href="#contact" id="lightbox-cta" class="btn btn-primary btn-sm" data-i18n="portfolio.inquire">Inquire About Similar Work</a>
+        </div>
+      </div>
+      <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

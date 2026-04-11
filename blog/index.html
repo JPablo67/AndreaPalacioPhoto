@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal | Andrea Palacio Photography</title>
+    <meta
+      name="description"
+      content="Explore Andrea Palacio's journal on hospitality, restaurant, real estate, and brand photography, with editorial insights crafted for ambitious brands in Monterrey, Houston, and beyond."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://andreapalacio.art/blog/" />
+    <link rel="alternate" hreflang="en" href="https://andreapalacio.art/blog/" />
+    <link rel="alternate" hreflang="es" href="https://andreapalacio.art/blog/?lang=es" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Journal | Andrea Palacio Photography" />
+    <meta
+      property="og:description"
+      content="Editorial insights on hospitality, restaurants, real estate, and brand photography from Andrea Palacio."
+    />
+    <meta property="og:url" content="https://andreapalacio.art/blog/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function() {
+        var t = localStorage.getItem('ap-theme');
+        if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/animations.css" />
+    <link rel="stylesheet" href="/src/styles/blog-page.css" />
+
+    <script id="blog-schema" type="application/ld+json"></script>
+  </head>
+  <body class="blog-page" data-page="blog">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="site-header" class="site-header scrolled">
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="/" class="nav-logo" id="nav-logo">
+          <span class="logo-text">ANDREA PALACIO</span>
+        </a>
+
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+          <ul class="nav-links">
+            <li class="nav-item"><a href="/#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="/#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+            <li class="nav-item"><a href="/#about" class="nav-link" data-i18n="nav.about">About</a></li>
+            <li class="nav-item"><a href="/blog/" class="nav-link active" data-i18n="nav.journal" aria-current="page">Journal</a></li>
+            <li class="nav-item"><a href="/#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div id="lang-toggle" class="lang-toggle" role="group" aria-label="Switch language">
+              <button type="button" class="lang-option active" data-lang="en" aria-pressed="true">EN</button>
+              <span class="lang-divider" aria-hidden="true">|</span>
+              <button type="button" class="lang-option" data-lang="es" aria-pressed="false">ES</button>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+              <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+            <a href="/#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.cta">Book Your Shoot</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="blog-page-main">
+      <section class="blog-page-hero">
+        <div class="container">
+          <div class="blog-hero-grid">
+            <div class="anim-fade-up">
+              <nav class="blog-breadcrumbs" aria-label="Breadcrumb">
+                <a href="/" data-i18n="blogPage.back_home">Back to Home</a>
+                <span>/</span>
+                <span data-i18n="journal.title">Journal</span>
+              </nav>
+              <p class="section-label" data-i18n="blogPage.eyebrow">Editorial Journal</p>
+              <h1 class="blog-page-title" data-i18n="blogPage.title">Photography Insights for Brands That Care About Image</h1>
+              <p class="blog-page-intro" data-i18n="blogPage.intro">A curated journal covering hospitality, restaurants, real estate, and brand campaigns through Andrea Palacio's editorial lens. Built to attract search visibility while still feeling unmistakably premium.</p>
+            </div>
+
+            <aside class="blog-hero-panel anim-fade-up anim-delay-1">
+              <span class="blog-hero-panel-label" data-i18n="blogPage.featured_label">Featured Perspective</span>
+              <h2 class="blog-hero-panel-title" data-i18n="blogPage.featured_title">A sharper point of view for hospitality, food, property, and brand storytelling.</h2>
+              <p class="blog-hero-panel-copy" data-i18n="blogPage.featured_copy">This page gathers Andrea's latest articles in one refined destination, helping marketing teams, creative directors, and founders discover visual strategy insights that feel as elevated as the brand itself.</p>
+              <div class="blog-entry-actions">
+                <a href="/#contact" class="btn btn-primary" data-i18n="blogPage.primary_cta">Start a Project</a>
+                <a href="/#portfolio" class="btn btn-ghost" data-i18n="blogPage.secondary_cta">View Portfolio</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-featured-section section">
+        <div class="container">
+          <div class="blog-featured-shell" id="blog-featured"></div>
+        </div>
+      </section>
+
+      <section class="blog-pillars-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="blogPage.explore_label">What You'll Find Here</p>
+            <h2 class="section-title" data-i18n="blogPage.explore_title">Topics shaped around modern brand visibility</h2>
+            <p class="section-subtitle" data-i18n="blogPage.explore_subtitle">The archive is intentionally focused on the sectors where editorial-quality photography has the clearest commercial impact.</p>
+          </div>
+
+          <div class="blog-pillars-grid">
+            <article class="blog-pillar anim-fade-up">
+              <h3 class="blog-pillar-title" data-i18n="blogPage.explore_1_title">Hospitality Photography</h3>
+              <p data-i18n="blogPage.explore_1_copy">Strategies for hotels, resorts, and boutique properties that need imagery aligned with luxury positioning and booking performance.</p>
+            </article>
+            <article class="blog-pillar anim-fade-up anim-delay-1">
+              <h3 class="blog-pillar-title" data-i18n="blogPage.explore_2_title">Restaurant Storytelling</h3>
+              <p data-i18n="blogPage.explore_2_copy">Editorial guidance for restaurants, food brands, and chef-led concepts that want stronger visual identity and appetite appeal.</p>
+            </article>
+            <article class="blog-pillar anim-fade-up anim-delay-2">
+              <h3 class="blog-pillar-title" data-i18n="blogPage.explore_3_title">Real Estate & Brand Content</h3>
+              <p data-i18n="blogPage.explore_3_copy">Insights for developers, architects, and modern brands looking to elevate perception through polished, atmospheric photography.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-archive-section section">
+        <div class="container">
+          <div class="section-header anim-fade-up">
+            <p class="section-label" data-i18n="blogPage.all_label">All Articles</p>
+            <h2 class="section-title" data-i18n="blogPage.all_title">Every article, organized in one editorial archive</h2>
+            <p class="section-subtitle" data-i18n="blogPage.all_subtitle">Each piece is written to help decision-makers understand how premium photography shapes perception, conversion, and long-term brand value.</p>
+          </div>
+          <div class="blog-archive-grid" id="blog-article-list"></div>
+        </div>
+      </section>
+
+      <section class="blog-cta-section section">
+        <div class="container">
+          <div class="blog-cta-card anim-fade-up">
+            <div>
+              <p class="section-label" data-i18n="contact.label">Get in Touch</p>
+              <h2 class="section-title" data-i18n="contact.title">Let's Create<br>Something Beautiful</h2>
+              <p data-i18n="contact.desc">Ready to bring your vision to life? Tell me about your project and I'll get back to you within 24 hours.</p>
+            </div>
+            <div class="blog-entry-actions">
+              <a href="/#contact" class="btn btn-primary" data-i18n="blogPage.primary_cta">Start a Project</a>
+              <a href="/#portfolio" class="btn btn-ghost" data-i18n="blogPage.secondary_cta">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">ANDREA PALACIO</span>
+            <p class="footer-tagline" data-i18n="footer.tagline">Elevated Visual Storytelling</p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/andreapalacioblog" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav">
+            <h4 class="footer-heading" data-i18n="footer.nav_heading">Navigation</h4>
+            <ul>
+              <li><a href="/#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+              <li><a href="/#services" data-i18n="nav.services">Services</a></li>
+              <li><a href="/#about" data-i18n="nav.about">About</a></li>
+              <li><a href="/blog/" data-i18n="nav.journal">Journal</a></li>
+              <li><a href="/#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h4 class="footer-heading" data-i18n="footer.services_heading">Services</h4>
+            <ul>
+              <li><a href="/#services" data-i18n="services.editorial.title">Editorial & Fashion</a></li>
+              <li><a href="/#services" data-i18n="services.hospitality.title">Hotels & Hospitality</a></li>
+              <li><a href="/#services" data-i18n="services.food.title">Restaurants & Food</a></li>
+              <li><a href="/#services" data-i18n="services.realestate.title">Real Estate & Architecture</a></li>
+              <li><a href="/#services" data-i18n="services.brand.title">Brand Campaigns</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-heading" data-i18n="footer.contact_heading">Contact</h4>
+            <p>hello@andreapalacio.art</p>
+            <p class="footer-location" data-i18n="footer.locations">Monterrey, MX & Houston, TX</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">© 2026 Andrea Palacio Photography. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/blog-main.js"></script>
+  </body>
+</html>

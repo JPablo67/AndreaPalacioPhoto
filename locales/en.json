@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "home": {
+      "title": "Andrea Palacio | Commercial & Editorial Photography · Monterrey · Houston",
+      "description": "Elevated visual storytelling for brands that demand more. Commercial & editorial photographer specializing in hospitality, restaurants, real estate, and brand campaigns in Monterrey and Houston."
+    },
+    "blog": {
+      "title": "Journal | Andrea Palacio Photography",
+      "description": "Explore Andrea Palacio's journal on hospitality, restaurant, real estate, and brand photography, with editorial insights crafted for ambitious brands in Monterrey, Houston, and beyond."
+    }
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About",
+    "journal": "Journal",
+    "contact": "Contact",
+    "cta": "Book Your Shoot",
+    "editorial": "Editorial & Fashion",
+    "hospitality": "Hotels & Hospitality",
+    "food": "Restaurants & Food",
+    "realestate": "Real Estate & Architecture",
+    "brand": "Brand Campaigns"
+  },
+  "hero": {
+    "eyebrow": "Editorial Expertise for Commercial Brands",
+    "headline": "Elevated Visual<br>Storytelling",
+    "subheadline": "Bringing magazine-quality aesthetics to hospitality, real estate, and lifestyle brands across Monterrey & Houston.",
+    "cta_primary": "Start a Project",
+    "cta_secondary": "View Portfolio"
+  },
+  "portfolio": {
+    "label": "Selected Work",
+    "title": "Portfolio",
+    "filter_all": "All",
+    "filter_editorial": "Editorial",
+    "filter_hospitality": "Hospitality",
+    "filter_food": "Food",
+    "filter_realestate": "Real Estate",
+    "filter_brand": "Brand",
+    "inquire": "Inquire About Similar Work",
+    "view_project": "View Project →"
+  },
+  "services": {
+    "label": "What I Offer",
+    "title": "Services",
+    "subtitle": "Premium visual content that elevates your brand and drives results.",
+    "learn_more": "Learn More →",
+    "editorial": {
+      "title": "Editorial & Fashion",
+      "desc": "High-end editorial portraits, fashion lookbooks, and beauty campaigns that command attention."
+    },
+    "hospitality": {
+      "title": "Boutique Hospitality",
+      "desc": "Moving beyond standard room shots. We capture the curated atmosphere, the luxury details, and the genuine lifestyle experience that compels guests to book."
+    },
+    "food": {
+      "title": "Culinary Experiences",
+      "desc": "Capturing the heat of the kitchen and the ambiance of the dining room. We style food and spaces with an artistic, editorial eye that makes menus irresistible."
+    },
+    "realestate": {
+      "title": "Architectural Aesthetics",
+      "desc": "Using fashion-inspired lighting and mood to transform real estate into aspirational living spaces. Perfect for luxury developments in San Pedro and exclusive Houston neighborhoods."
+    },
+    "brand": {
+      "title": "Brand Campaigns",
+      "desc": "Leveraging years of fashion photography experience to cast your product in a highly polished, narrative-driven campaign designed to convert."
+    },
+    "content": {
+      "title": "Content Creation",
+      "desc": "Social-media-ready visual packages combining photography with strategic storytelling."
+    }
+  },
+  "about": {
+    "label": "About",
+    "title": "Your Brand, Through an Editorial Lens",
+    "bio_1": "My foundation in fashion and editorial photography gave me an obsession with lighting, styling, and visual narratives.",
+    "bio_2": "Now, I bring that rigorous eye to the commercial world. Operating between the industrial power of Monterrey and the vibrant market of Houston,",
+    "bio_3": "I partner with ambitious brands to replace generic corporate imagery with artful, magazine-quality storytelling.",
+    "stat_followers": "Followers",
+    "stat_projects": "Projects",
+    "stat_years": "Years",
+    "cta": "Let's Work Together"
+  },
+  "testimonials": {
+    "label": "Client Stories",
+    "title": "Kind Words",
+    "t1": {
+      "quote": "\"Andrea's ability to capture the essence of our hotel transformed our visual identity. The images she delivered exceeded every expectation and have driven a measurable increase in bookings.\"",
+      "name": "María González",
+      "title": "Director of Marketing, Grand Hotel Monterrey"
+    },
+    "t2": {
+      "quote": "\"Working with Andrea felt like collaborating with a creative director, not just a photographer. She understood our brand before we could even articulate it ourselves.\"",
+      "name": "Carlos Mendoza",
+      "title": "Founder, Lumière Restaurant Group"
+    },
+    "t3": {
+      "quote": "\"The editorial quality Andrea brings to commercial work is unmatched. Our properties have never looked this good — her eye for composition and light is extraordinary.\"",
+      "name": "Sarah Chen",
+      "title": "VP Creative, Prestige Real Estate Houston"
+    }
+  },
+  "journal": {
+    "label": "Insights & Stories",
+    "title": "Journal",
+    "view_all": "View All Posts",
+    "read_more": "Read More →",
+    "posts": [
+      {
+        "id": "hotel-photography-bookings",
+        "tag": "Hospitality",
+        "title": "How Professional Photography Increases Hotel Booking Rates",
+        "excerpt": "Discover the measurable impact that elevated visual content has on hotel conversion rates and guest experience expectations.",
+        "date": "March 2026"
+      },
+      {
+        "id": "hiring-real-estate-photographer",
+        "tag": "Real Estate",
+        "title": "5 Things to Know Before Hiring a Real Estate Photographer",
+        "excerpt": "From timing and staging to deliverables and licensing — everything you need to make the right choice for your property.",
+        "date": "February 2026"
+      },
+      {
+        "id": "restaurant-visual-storytelling",
+        "tag": "Food & Beverage",
+        "title": "The Art of Restaurant Visual Storytelling",
+        "excerpt": "How to capture the ambiance, culinary artistry, and brand personality of a restaurant through intentional photography.",
+        "date": "January 2026"
+      }
+    ]
+  },
+  "blogPage": {
+    "eyebrow": "Editorial Journal",
+    "title": "Photography Insights for Brands That Care About Image",
+    "intro": "A curated journal covering hospitality, restaurants, real estate, and brand campaigns through Andrea Palacio's editorial lens. Built to attract search visibility while still feeling unmistakably premium.",
+    "featured_label": "Featured Perspective",
+    "featured_title": "A sharper point of view for hospitality, food, property, and brand storytelling.",
+    "featured_copy": "This page gathers Andrea's latest articles in one refined destination, helping marketing teams, creative directors, and founders discover visual strategy insights that feel as elevated as the brand itself.",
+    "all_label": "All Articles",
+    "all_title": "Every article, organized in one editorial archive",
+    "all_subtitle": "Each piece is written to help decision-makers understand how premium photography shapes perception, conversion, and long-term brand value.",
+    "explore_label": "What You'll Find Here",
+    "explore_title": "Topics shaped around modern brand visibility",
+    "explore_subtitle": "The archive is intentionally focused on the sectors where editorial-quality photography has the clearest commercial impact.",
+    "explore_1_title": "Hospitality Photography",
+    "explore_1_copy": "Strategies for hotels, resorts, and boutique properties that need imagery aligned with luxury positioning and booking performance.",
+    "explore_2_title": "Restaurant Storytelling",
+    "explore_2_copy": "Editorial guidance for restaurants, food brands, and chef-led concepts that want stronger visual identity and appetite appeal.",
+    "explore_3_title": "Real Estate & Brand Content",
+    "explore_3_copy": "Insights for developers, architects, and modern brands looking to elevate perception through polished, atmospheric photography.",
+    "primary_cta": "Start a Project",
+    "secondary_cta": "View Portfolio",
+    "back_home": "Back to Home"
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Let's Create<br>Something Beautiful",
+    "desc": "Ready to bring your vision to life? Tell me about your project and I'll get back to you within 24 hours.",
+    "form": {
+      "name": "Full Name *",
+      "email": "Email *",
+      "phone": "Phone (Optional)",
+      "company": "Company / Brand",
+      "type": "Project Type *",
+      "type_placeholder": "Select a service...",
+      "type_editorial": "Editorial & Fashion",
+      "type_hospitality": "Hotels & Hospitality",
+      "type_food": "Restaurants & Food",
+      "type_realestate": "Real Estate & Architecture",
+      "type_brand": "Brand Campaigns",
+      "type_content": "Content Creation",
+      "type_other": "Other",
+      "location": "Location *",
+      "location_placeholder": "Select location...",
+      "location_other": "Other",
+      "date": "Project Timeline",
+      "budget": "Budget Range",
+      "budget_placeholder": "Select range...",
+      "details": "Tell me about your project (Optional)",
+      "referral": "How did you find me?",
+      "referral_placeholder": "Select...",
+      "referral_referral": "Referral",
+      "referral_social": "Social Media",
+      "referral_other": "Other",
+      "submit": "Send Inquiry",
+      "sending": "Sending...",
+      "success": "Thank you! Your inquiry has been sent. I'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again or email me directly."
+    }
+  },
+  "footer": {
+    "tagline": "Elevated Visual Storytelling",
+    "nav_heading": "Navigation",
+    "services_heading": "Services",
+    "contact_heading": "Contact",
+    "locations": "Monterrey, MX & Houston, TX",
+    "copyright": "© 2026 Andrea Palacio Photography. All rights reserved."
+  }
+}

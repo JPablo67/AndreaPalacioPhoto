@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "home": {
+      "title": "Andrea Palacio | Fotografía Comercial y Editorial · Monterrey · Houston",
+      "description": "Narrativa visual elevada para marcas que exigen más. Fotógrafa comercial y editorial especializada en hospitalidad, restaurantes, bienes raíces y campañas de marca en Monterrey y Houston."
+    },
+    "blog": {
+      "title": "Blog | Andrea Palacio Photography",
+      "description": "Explora el blog de Andrea Palacio sobre fotografía para hospitalidad, restaurantes, bienes raíces y marcas, con ideas editoriales pensadas para negocios ambiciosos en Monterrey, Houston y más allá."
+    }
+  },
+  "nav": {
+    "portfolio": "Portafolio",
+    "services": "Servicios",
+    "about": "Acerca",
+    "journal": "Blog",
+    "contact": "Contacto",
+    "cta": "Reserva tu Sesion",
+    "editorial": "Editorial y Moda",
+    "hospitality": "Hoteles y Hospitalidad",
+    "food": "Restaurantes y Gastronomía",
+    "realestate": "Bienes Raíces y Arquitectura",
+    "brand": "Campañas de Marca"
+  },
+  "hero": {
+    "eyebrow": "Fotografía Editorial para Marcas Comerciales",
+    "headline": "Narrativa Visual<br>Elevada",
+    "subheadline": "Llevando la estética de alta gama a la hospitalidad, bienes raíces y marcas de estilo de vida en Monterrey y Houston.",
+    "cta_primary": "Iniciar Proyecto",
+    "cta_secondary": "Ver Portafolio"
+  },
+  "portfolio": {
+    "label": "Trabajo Seleccionado",
+    "title": "Portafolio",
+    "filter_all": "Todo",
+    "filter_editorial": "Editorial",
+    "filter_hospitality": "Hospitalidad",
+    "filter_food": "Gastronomía",
+    "filter_realestate": "Bienes Raíces",
+    "filter_brand": "Marca",
+    "inquire": "Consultar Trabajo Similar",
+    "view_project": "Ver Proyecto →"
+  },
+  "services": {
+    "label": "Lo Que Ofrezco",
+    "title": "Servicios",
+    "subtitle": "Contenido visual premium que eleva tu marca e impulsa resultados.",
+    "learn_more": "Más Información →",
+    "editorial": {
+      "title": "Editorial y Moda",
+      "desc": "Retratos editoriales de alta gama, lookbooks de moda y campañas de belleza que capturan la atención."
+    },
+    "hospitality": {
+      "title": "Hospitalidad Boutique",
+      "desc": "Más allá de las fotos estándar. Capturamos la atmósfera, los detalles de lujo y la experiencia de estilo de vida que convence a los huéspedes de reservar."
+    },
+    "food": {
+      "title": "Experiencias Culinarias",
+      "desc": "Capturando el calor de la cocina y el ambiente del comedor. Estilizamos platillos y espacios con un ojo artístico y editorial que hace los menús irresistibles."
+    },
+    "realestate": {
+      "title": "Estética Arquitectónica",
+      "desc": "Utilizando iluminación inspirada en la moda para transformar bienes raíces en espacios aspiracionales. Ideal para desarrollos de lujo en San Pedro y exclusivas zonas de Houston."
+    },
+    "brand": {
+      "title": "Campañas de Marca",
+      "desc": "Aprovechando años de experiencia en fotografía de moda para posicionar tu producto en una campaña pulida y narrativa diseñada para vender."
+    },
+    "content": {
+      "title": "Creación de Contenido",
+      "desc": "Paquetes visuales listos para redes sociales que combinan fotografía con narrativa estratégica."
+    }
+  },
+  "about": {
+    "label": "Acerca",
+    "title": "Tu Marca, A Través de un Lente Editorial",
+    "bio_1": "Mi experiencia en fotografía de moda y editorial me dio una obsesión por la iluminación y las narrativas visuales.",
+    "bio_2": "Hoy, llevo ese ojo riguroso al mundo comercial. Operando entre Monterrey y Houston,",
+    "bio_3": "me asocio con marcas ambiciosas para transformar imágenes corporativas genéricas en arte con calidad de revista.",
+    "stat_followers": "Seguidores",
+    "stat_projects": "Proyectos",
+    "stat_years": "Años",
+    "cta": "Trabajemos Juntos"
+  },
+  "testimonials": {
+    "label": "Historias de Clientes",
+    "title": "Palabras Amables",
+    "t1": {
+      "quote": "\"La capacidad de Andrea para capturar la esencia de nuestro hotel transformó nuestra identidad visual. Las imágenes que entregó superaron cada expectativa y han impulsado un aumento medible en reservaciones.\"",
+      "name": "María González",
+      "title": "Directora de Marketing, Grand Hotel Monterrey"
+    },
+    "t2": {
+      "quote": "\"Trabajar con Andrea se sintió como colaborar con una directora creativa, no solo una fotógrafa. Entendió nuestra marca antes de que pudiéramos articularla nosotros mismos.\"",
+      "name": "Carlos Mendoza",
+      "title": "Fundador, Grupo Restaurantero Lumière"
+    },
+    "t3": {
+      "quote": "\"La calidad editorial que Andrea aporta al trabajo comercial es inigualable. Nuestras propiedades nunca se han visto tan bien — su ojo para la composición y la luz es extraordinario.\"",
+      "name": "Sarah Chen",
+      "title": "VP Creativa, Prestige Real Estate Houston"
+    }
+  },
+  "journal": {
+    "label": "Ideas e Historias",
+    "title": "Blog",
+    "view_all": "Ver Todas las Publicaciones",
+    "read_more": "Leer Más →",
+    "posts": [
+      {
+        "id": "hotel-photography-bookings",
+        "tag": "Hospitalidad",
+        "title": "Cómo la Fotografía Profesional Aumenta las Reservaciones de Hotel",
+        "excerpt": "Descubre el impacto medible que el contenido visual elevado tiene en las tasas de conversión y las expectativas de la experiencia del huésped.",
+        "date": "Marzo 2026"
+      },
+      {
+        "id": "hiring-real-estate-photographer",
+        "tag": "Bienes Raíces",
+        "title": "5 Cosas que Debes Saber Antes de Contratar un Fotógrafo de Bienes Raíces",
+        "excerpt": "Desde el horario y la preparación hasta los entregables y las licencias — todo lo que necesitas para tomar la decisión correcta.",
+        "date": "Febrero 2026"
+      },
+      {
+        "id": "restaurant-visual-storytelling",
+        "tag": "Alimentos y Bebidas",
+        "title": "El Arte de la Narrativa Visual en Restaurantes",
+        "excerpt": "Cómo capturar la ambientación, el arte culinario y la personalidad de marca de un restaurante a través de fotografía intencional.",
+        "date": "Enero 2026"
+      }
+    ]
+  },
+  "blogPage": {
+    "eyebrow": "Blog Editorial",
+    "title": "Ideas de Fotografía para Marcas que Cuidan su Imagen",
+    "intro": "Un espacio curado sobre hospitalidad, restaurantes, bienes raíces y campañas de marca a través del lente editorial de Andrea Palacio. Diseñado para fortalecer el SEO sin perder una dirección visual premium.",
+    "featured_label": "Perspectiva Destacada",
+    "featured_title": "Una visión más precisa para la hospitalidad, la gastronomía, los espacios y las marcas.",
+    "featured_copy": "Esta página reúne los artículos más recientes de Andrea en un solo destino refinado, ayudando a equipos de marketing, directores creativos y fundadores a descubrir ideas visuales con una presentación coherente con la marca.",
+    "all_label": "Todos los Artículos",
+    "all_title": "Cada artículo, organizado en un archivo editorial",
+    "all_subtitle": "Cada texto está pensado para ayudar a quienes toman decisiones a entender cómo la fotografía premium influye en la percepción, la conversión y el valor de marca.",
+    "explore_label": "Lo Que Encontrarás Aquí",
+    "explore_title": "Temas pensados para la visibilidad de marcas contemporáneas",
+    "explore_subtitle": "El archivo está enfocado de manera intencional en los sectores donde la fotografía con calidad editorial tiene un impacto comercial más claro.",
+    "explore_1_title": "Fotografía de Hospitalidad",
+    "explore_1_copy": "Estrategias para hoteles, resorts y propiedades boutique que necesitan imágenes alineadas con una posición de lujo y mejor desempeño comercial.",
+    "explore_2_title": "Narrativa para Restaurantes",
+    "explore_2_copy": "Guía editorial para restaurantes, marcas de alimentos y conceptos liderados por chefs que buscan una identidad visual más fuerte y apetecible.",
+    "explore_3_title": "Bienes Raíces y Contenido de Marca",
+    "explore_3_copy": "Ideas para desarrolladores, arquitectos y marcas contemporáneas que quieren elevar su percepción a través de fotografía pulida y atmosférica.",
+    "primary_cta": "Iniciar Proyecto",
+    "secondary_cta": "Ver Portafolio",
+    "back_home": "Volver al Inicio"
+  },
+  "contact": {
+    "label": "Ponte en Contacto",
+    "title": "Creemos Algo<br>Hermoso",
+    "desc": "¿Lista para dar vida a tu visión? Cuéntame sobre tu proyecto y te responderé dentro de 24 horas.",
+    "form": {
+      "name": "Nombre Completo *",
+      "email": "Correo Electrónico *",
+      "phone": "Teléfono (Opcional)",
+      "company": "Empresa / Marca",
+      "type": "Tipo de Proyecto *",
+      "type_placeholder": "Selecciona un servicio...",
+      "type_editorial": "Editorial y Moda",
+      "type_hospitality": "Hoteles y Hospitalidad",
+      "type_food": "Restaurantes y Comida",
+      "type_realestate": "Arquitectura e Inmobiliaria",
+      "type_brand": "Campañas de Marca",
+      "type_content": "Creación de Contenido",
+      "type_other": "Otro",
+      "location": "Ubicación *",
+      "location_placeholder": "Selecciona ubicación...",
+      "location_other": "Otro",
+      "date": "Fecha del Proyecto",
+      "budget": "Presupuesto Estimado",
+      "budget_placeholder": "Selecciona rango...",
+      "details": "Cuéntame sobre tu proyecto (Opcional)",
+      "referral": "¿Cómo me encontraste?",
+      "referral_placeholder": "Selecciona...",
+      "referral_referral": "Referencia",
+      "referral_social": "Redes Sociales",
+      "referral_other": "Otro",
+      "submit": "Enviar Consulta",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Tu consulta ha sido enviada. Te responderé dentro de 24 horas.",
+      "error": "Algo salió mal. Intenta de nuevo o escríbeme directamente."
+    }
+  },
+  "footer": {
+    "tagline": "Narrativa Visual Elevada",
+    "nav_heading": "Navegación",
+    "services_heading": "Servicios",
+    "contact_heading": "Contacto",
+    "locations": "Monterrey, MX y Houston, TX",
+    "copyright": "© 2026 Andrea Palacio Photography. Todos los derechos reservados."
+  }
+}

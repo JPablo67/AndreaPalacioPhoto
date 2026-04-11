@@ -1,0 +1,259 @@
+/* ============================================
+   BLOG POST PAGE — Andrea Palacio Photography
+   ============================================ */
+
+.blog-post-page .blog-page-main {
+  padding-top: var(--nav-height);
+}
+
+.post-hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--space-5xl) + var(--space-lg)) 0 var(--space-4xl);
+}
+
+.post-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(184, 149, 106, 0.14), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(184, 149, 106, 0.09), transparent 26%);
+  pointer-events: none;
+}
+
+.post-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--space-4xl);
+  align-items: stretch;
+}
+
+.post-title {
+  max-width: 12ch;
+  margin-bottom: var(--space-lg);
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  line-height: 1.04;
+}
+
+.post-intro {
+  max-width: 44rem;
+  margin-bottom: var(--space-xl);
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.post-hero-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 24rem;
+  border-radius: calc(var(--radius-xl) + 2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.post-hero-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.08), rgba(10, 10, 10, 0.6));
+}
+
+.post-hero-panel-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: end;
+  gap: var(--space-lg);
+  height: 100%;
+  padding: var(--space-2xl);
+  color: #f4ede5;
+}
+
+.post-highlight-item {
+  display: grid;
+  gap: var(--space-xs);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.post-highlight-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.post-highlight-item strong {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.post-highlight-item span {
+  color: rgba(244, 237, 229, 0.84);
+  line-height: 1.7;
+}
+
+.post-body-section {
+  padding-top: 0;
+}
+
+.post-layout {
+  display: grid;
+  grid-template-columns: 22rem minmax(0, 1fr);
+  gap: var(--space-4xl);
+  align-items: start;
+}
+
+.post-sticky-stack {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-xl));
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.post-sticky-card {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(180deg, var(--glass) 0%, rgba(184, 149, 106, 0.06) 100%);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-sticky-cta p {
+  margin-bottom: var(--space-lg);
+}
+
+.post-sidebar-heading {
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.post-toc,
+.post-takeaway-list,
+.post-bullet-list {
+  display: grid;
+  gap: var(--space-md);
+  padding-left: 1.15rem;
+}
+
+.post-toc {
+  list-style: decimal;
+}
+
+.post-toc a {
+  color: var(--text-secondary);
+}
+
+.post-toc a:hover {
+  color: var(--accent);
+}
+
+.post-takeaway-list,
+.post-bullet-list {
+  list-style: disc;
+}
+
+.post-takeaway-list li,
+.post-bullet-list li {
+  color: var(--text-secondary);
+}
+
+.post-content {
+  min-width: 0;
+}
+
+.post-lead,
+.post-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.post-lead p {
+  font-size: 1.18rem;
+  line-height: 1.9;
+  color: var(--text-primary);
+}
+
+.post-section-title {
+  margin-bottom: var(--space-lg);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.post-section p {
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+.post-faq-section {
+  padding-top: 0;
+}
+
+.post-faq-list {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.post-faq-item {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  background: var(--glass);
+  overflow: hidden;
+}
+
+.post-faq-item summary {
+  padding: var(--space-xl);
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.post-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.post-faq-answer {
+  padding: 0 var(--space-xl) var(--space-xl);
+}
+
+.post-related-section {
+  padding-top: 0;
+}
+
+.post-related-grid {
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .post-hero-grid,
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .post-sticky-stack {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-hero-section {
+    padding-top: var(--space-5xl);
+  }
+
+  .post-title {
+    font-size: clamp(2.4rem, 11vw, 4rem);
+  }
+
+  .post-hero-panel-content,
+  .post-sticky-card,
+  .post-faq-item summary,
+  .post-faq-answer {
+    padding: var(--space-lg);
+  }
+}

@@ -1,0 +1,29 @@
+name: Deploy AndreaPalacioPhoto
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Deploy to Production
+        run: |
+          APP_DIR=~/Documents/Projects/AndreaPalacioPhoto
+          WEB_PORT=3001
+
+          cd "$APP_DIR"
+
+          git fetch --all
+          git checkout main
+          git pull origin main
+
+          sudo docker compose build
+          sudo docker compose up -d --force-recreate --no-build
+
+          sudo docker image prune -f
+
+          sleep 5
+          curl -sf "http://localhost:${WEB_PORT}/api/health" > /dev/null && echo "✅ Deploy successful" || echo "❌ Deploy failed"
