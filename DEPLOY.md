@@ -22,7 +22,7 @@ This project can be deployed with the same pattern you already use on your self-
 - `api`: lightweight Node container running `server/index.js`
 - Nginx inside the `web` container proxies `/api/*` to the `api` container
 
-The public site is exposed on `localhost:3001` by default, matching the style of your current deployment flow.
+The public site is exposed on `localhost:3003` by default, matching the style of your current deployment flow. If you change the port in `.env.production`, run Docker Compose with `--env-file .env.production` so the port mapping uses the same value.
 
 ## Server setup
 
@@ -35,7 +35,16 @@ Clone the repo to:
 Create a production env file:
 
 ```bash
-cp .env.production.example .env.production
+cat > .env.production <<'EOF'
+WEB_PORT=3003
+PORT=8787
+RESEND_API_KEY=re_xxxxxxxxx
+INQUIRY_TO_EMAIL=hello@andreapalacio.art
+INQUIRY_FROM_EMAIL=Andrea Palacio <inquiries@andreapalacio.art>
+INQUIRY_AUTOREPLY=true
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX=5
+EOF
 ```
 
 Then fill in:
@@ -51,7 +60,7 @@ The workflow in `.github/workflows/deploy.yml` assumes:
 - branch: `main`
 - self-hosted runner available on the server
 - repo path: `~/Documents/Projects/AndreaPalacioPhoto`
-- public port: `3001`
+- public port: `3003`
 
 If your path is different, update:
 
@@ -62,7 +71,7 @@ APP_DIR=~/Documents/Projects/AndreaPalacioPhoto
 If you want a different port, update:
 
 ```yaml
-WEB_PORT=3001
+WEB_PORT=3003
 ```
 
 and set the same value in `.env.production`.
@@ -73,10 +82,9 @@ Run once on the server:
 
 ```bash
 cd ~/Documents/Projects/AndreaPalacioPhoto
-cp .env.production.example .env.production
-docker compose build
-docker compose up -d
-curl -sf http://localhost:3001/api/health
+docker compose --env-file .env.production build
+docker compose --env-file .env.production up -d
+curl -sf http://localhost:3003/api/health
 ```
 
 ## Reverse proxy
@@ -85,7 +93,7 @@ If you already use host-level Nginx, point your domain to:
 
 ```nginx
 location / {
-    proxy_pass http://127.0.0.1:3001;
+    proxy_pass http://127.0.0.1:3003;
     proxy_http_version 1.1;
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
