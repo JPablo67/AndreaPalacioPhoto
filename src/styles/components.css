@@ -1150,6 +1150,8 @@ html[data-theme="light"] .hero-ctas .btn-ghost:hover {
 .form-group input,
 .form-group select,
 .form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
   background: var(--bg-primary);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
