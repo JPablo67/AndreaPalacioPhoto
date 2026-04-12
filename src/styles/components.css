@@ -1663,20 +1663,24 @@ html[data-theme="light"] .hero-ctas .btn-ghost:hover {
    MOBILE STICKY CTA
    ============================== */
 @media (max-width: 768px) {
-  #hero-cta-primary.is-sticky-mobile {
+  .mobile-sticky-clone {
     position: fixed;
-    bottom: var(--space-md);
+    bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
     left: var(--space-md);
     right: var(--space-md);
-    width: auto;
-    z-index: var(--z-sticky, 100);
+    width: calc(100% - calc(var(--space-md) * 2));
+    z-index: var(--z-modal, 9999);
     margin: 0;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-    animation: slideUpFade 0.3s ease forwards;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
-}
-
-@keyframes slideUpFade {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  
+  .mobile-sticky-clone.is-visible-sticky {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
 }

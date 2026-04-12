@@ -117,33 +117,38 @@ export function initStickyMobileCTA() {
 
   if (!primaryCta || !heroSection) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        // Evaluate on mobile width and when hero section leaves viewport
-        if (window.innerWidth <= 768) {
-          if (!entry.isIntersecting) {
-            primaryCta.classList.add('is-sticky-mobile');
-          } else {
-            primaryCta.classList.remove('is-sticky-mobile');
-          }
+  // Create a clone exclusively for the sticky mobile state
+  // Appending to body avoids ANY CSS transform/overflow containing block traps.
+  const stickyClone = primaryCta.cloneNode(true);
+  stickyClone.id = 'hero-cta-sticky';
+  stickyClone.className = 'btn btn-primary mobile-sticky-clone'; // Strip all .anim-fade-up locks
+  stickyClone.style.display = 'none';
+  document.body.appendChild(stickyClone);
+
+  function updateStickyCTA() {
+    if (window.innerWidth <= 768) {
+      const ctaSection = document.querySelector('.hero-ctas');
+      if (ctaSection) {
+        const ctaRect = ctaSection.getBoundingClientRect();
+        
+        // Show clone if the original button in the hero scrolled up out of view
+        if (ctaRect.bottom < 50) {
+          stickyClone.style.display = 'flex';
+          stickyClone.classList.add('is-visible-sticky');
         } else {
-          // Reset just in case resize happened
-          primaryCta.classList.remove('is-sticky-mobile');
+          stickyClone.classList.remove('is-visible-sticky');
+          stickyClone.style.display = 'none';
         }
-      });
-    },
-    {
-      threshold: 0,
-      rootMargin: '-80px 0px 0px 0px' 
+      }
+    } else {
+      stickyClone.style.display = 'none';
+      stickyClone.classList.remove('is-visible-sticky');
     }
-  );
+  }
 
-  observer.observe(heroSection);
+  window.addEventListener('scroll', updateStickyCTA, { passive: true });
+  window.addEventListener('resize', updateStickyCTA, { passive: true });
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      primaryCta.classList.remove('is-sticky-mobile');
-    }
-  });
+  // Initial check
+  updateStickyCTA();
 }
