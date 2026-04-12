@@ -40,7 +40,7 @@ html[data-theme="dark"] .site-header.scrolled {
 
 .nav-logo {
   position: relative;
-  z-index: var(--z-overlay);
+  z-index: var(--z-modal);
 }
 
 .logo-text {
@@ -69,7 +69,7 @@ html[data-theme="dark"] .logo-text {
   width: 28px;
   height: 20px;
   position: relative;
-  z-index: var(--z-overlay);
+  z-index: var(--z-modal);
 }
 
 .hamburger-line {
