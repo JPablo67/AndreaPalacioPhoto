@@ -13,6 +13,54 @@ export function initForms() {
   if (!form) return;
 
   // Real-time validation styling
+
+  // Mobile phone prefix label truncator logic
+  const prefixSelect = document.getElementById('form-phone-prefix');
+  if(prefixSelect) {
+    function updatePrefixText() {
+       if(window.innerWidth <= 480) {
+         Array.from(prefixSelect.options).forEach(opt => {
+            // Check if it already has the full text stored in data-full, else store it
+            if(!opt.dataset.full) opt.dataset.full = opt.text;
+            
+            // Render only the core prefix directly in the DOM
+            opt.text = opt.value;
+         });
+       } else {
+         Array.from(prefixSelect.options).forEach(opt => {
+            // Restore the full text for desktop
+            if(opt.dataset.full) opt.text = opt.dataset.full;
+         });
+       }
+    }
+    
+    // Apple iOS Safari quirk: The native <select> wheel reads whatever text is currently inside the <option>
+    // *when the dropdown is opened*. If we truncate it to "+52" for the idle closed state, the wheel says "+52".
+    
+    // To solve this beautifully: when the user TAPS the box to open it, we instantly restore the full text 
+    // just before the OS renders the wheel! When they close the wheel or click away, we instantly truncate it back!
+    
+    prefixSelect.addEventListener('focus', () => {
+       if(window.innerWidth <= 480) {
+          Array.from(prefixSelect.options).forEach(opt => {
+            if(opt.dataset.full) opt.text = opt.dataset.full;
+          });
+       }
+    });
+    
+    prefixSelect.addEventListener('blur', () => {
+       if(window.innerWidth <= 480) {
+          Array.from(prefixSelect.options).forEach(opt => {
+            opt.text = opt.value;
+          });
+       }
+    });
+    
+    // Setup initial text truncations on pageload
+    window.addEventListener('resize', updatePrefixText);
+    updatePrefixText();
+  }
+
   form.querySelectorAll('input, select, textarea').forEach(field => {
     field.addEventListener('blur', () => validateField(field));
     field.addEventListener('input', () => {

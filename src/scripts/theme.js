@@ -17,10 +17,7 @@ function getPreferredTheme() {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored === 'light' || stored === 'dark') return stored;
 
-  // Check system preference
-  if (window.matchMedia?.('(prefers-color-scheme: dark)').matches) {
-    return 'dark';
-  }
+  // Force light theme by default
   return 'light';
 }
 
@@ -82,12 +79,5 @@ export function initTheme() {
   const btn = document.getElementById('theme-toggle');
   btn?.addEventListener('click', toggleTheme);
 
-  // Listen for system preference changes
-  window.matchMedia?.('(prefers-color-scheme: dark)')
-    .addEventListener?.('change', (e) => {
-      // Only react if user hasn't manually set a preference
-      if (!localStorage.getItem(STORAGE_KEY)) {
-        applyTheme(e.matches ? 'dark' : 'light');
-      }
-    });
+
 }

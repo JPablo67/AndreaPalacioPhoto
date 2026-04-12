@@ -19,7 +19,7 @@
     <script>
       (function() {
         var t = localStorage.getItem('ap-theme');
-        if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (!t) t = 'light';
         document.documentElement.setAttribute('data-theme', t);
       })();
     </script>
@@ -388,9 +388,9 @@
                 <label for="form-phone" data-i18n="contact.form.phone">Phone (Optional)</label>
                 <div class="phone-input-group">
                   <select id="form-phone-prefix" name="phonePrefix" class="phone-prefix">
-                    <option value="+52">+52 (Mexico)</option>
-                    <option value="+1">+1 (US / Canada)</option>
-                    <option value="+57">+57 (Colombia)</option>
+                    <option value="+52" data-full="+52 (Mexico)">+52 (Mexico)</option>
+                    <option value="+1" data-full="+1 (US / Canada)">+1 (US / Canada)</option>
+                    <option value="+57" data-full="+57 (Colombia)">+57 (Colombia)</option>
                     <option value="other">Other</option>
                   </select>
                   <input type="tel" id="form-phone" name="phone" autocomplete="tel" placeholder="Phone Number" />
