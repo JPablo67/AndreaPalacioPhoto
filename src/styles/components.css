@@ -1665,7 +1665,7 @@ html[data-theme="light"] .hero-ctas .btn-ghost:hover {
 @media (max-width: 768px) {
   .mobile-sticky-clone {
     position: fixed;
-    bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
     left: var(--space-md);
     right: var(--space-md);
     width: calc(100% - calc(var(--space-md) * 2));
