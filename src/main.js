@@ -5,7 +5,7 @@
 
 import { initTheme } from './scripts/theme.js';
 import { initI18n, setupLangToggle } from './scripts/i18n.js';
-import { initAnimations, initCounters, initParallax } from './scripts/animations.js';
+import { initAnimations, initCounters, initParallax, initStickyMobileCTA } from './scripts/animations.js';
 import { initGallery } from './scripts/gallery.js';
 import { initForms } from './scripts/forms.js';
 import { initBlog } from './scripts/blog.js';
@@ -36,6 +36,7 @@ async function init() {
   initAnimations();
   initCounters();
   initParallax();
+  initStickyMobileCTA();
 
   // 5. Trigger initial hero animations
   requestAnimationFrame(() => {

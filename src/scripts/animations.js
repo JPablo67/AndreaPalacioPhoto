@@ -106,3 +106,44 @@ export function initParallax() {
     }
   });
 }
+
+
+/**
+ * Sticky Mobile CTA Behavior
+ */
+export function initStickyMobileCTA() {
+  const primaryCta = document.getElementById('hero-cta-primary');
+  const heroSection = document.getElementById('hero');
+
+  if (!primaryCta || !heroSection) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        // Evaluate on mobile width and when hero section leaves viewport
+        if (window.innerWidth <= 768) {
+          if (!entry.isIntersecting) {
+            primaryCta.classList.add('is-sticky-mobile');
+          } else {
+            primaryCta.classList.remove('is-sticky-mobile');
+          }
+        } else {
+          // Reset just in case resize happened
+          primaryCta.classList.remove('is-sticky-mobile');
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: '-80px 0px 0px 0px' 
+    }
+  );
+
+  observer.observe(heroSection);
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      primaryCta.classList.remove('is-sticky-mobile');
+    }
+  });
+}

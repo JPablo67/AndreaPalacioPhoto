@@ -6,28 +6,131 @@
 import { t, getLang } from './i18n.js';
 
 // Portfolio data — populated with real images and mixed natively for an organic masonry layout
+// Portfolio data — populated with real images and mixed natively for an organic masonry layout
 const portfolioData = [
-  // Mixed Layout (Interleaving tall and wide for dynamic visual balance)
-  { id: 11, title: { en: 'Boutique Details', es: 'Detalles Boutique' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-1.jpeg' },
-  { id: 1, title: { en: 'Lumière Kitchen', es: 'Cocina Lumière' }, category: 'editorial', size: 'size-wide', image: '/portfolio/1.png' },
-  { id: 12, title: { en: 'Architectural Shadow', es: 'Sombra Arquitectónica' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-2.jpeg' },
-  { id: 2, title: { en: 'Grand Hotel Monterrey', es: 'Grand Hotel Monterrey' }, category: 'editorial', size: 'size-wide', image: '/portfolio/2.png' },
-  { id: 13, title: { en: 'Plated Art', es: 'Arte en Plato' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-3.jpeg' },
-  { id: 14, title: { en: 'Brand Essence', es: 'Esencia de Marca' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-4.jpeg' },
-  { id: 3, title: { en: 'Urban Collection', es: 'Colección Urbana' }, category: 'editorial', size: 'size-wide', image: '/portfolio/3.png' },
-  { id: 16, title: { en: 'Lobby Luxury', es: 'Lujo en Lobby' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-6.jpg' },
-  { id: 4, title: { en: 'Modern Living', es: 'Vida Moderna' }, category: 'editorial', size: 'size-wide', image: '/portfolio/4.png' },
-  { id: 18, title: { en: 'Chef in Action', es: 'Chef en Acción' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-8.jpg' },
-  { id: 5, title: { en: 'Vogue Nights', es: 'Noches Vogue' }, category: 'editorial', size: 'size-wide', image: '/portfolio/5.png' },
-  { id: 15, title: { en: 'Editorial Portrait', es: 'Retrato Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-5.jpeg' },
-  { id: 6, title: { en: 'Coastal Resort & Spa', es: 'Resort & Spa Costero' }, category: 'editorial', size: 'size-wide', image: '/portfolio/6.png' },
-  { id: 17, title: { en: 'Interior Mood', es: 'Atmosfera Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-7.jpg' },
-  { id: 7, title: { en: 'Farm to Table', es: 'Del Campo a la Mesa' }, category: 'editorial', size: 'size-wide', image: '/portfolio/7.png' },
-  { id: 19, title: { en: 'Product Highlight', es: 'Destacado de Producto' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-9.jpg' },
-  { id: 8, title: { en: 'Skyline Residences', es: 'Residencias Skyline' }, category: 'editorial', size: 'size-wide', image: '/portfolio/8.png' },
-  { id: 20, title: { en: 'Fashion Week', es: 'Semana de la Moda' }, category: 'editorial', size: 'size-tall', image: '/portfolio/port-10.jpg' },
-  { id: 9, title: { en: 'Artisan Craft Spirits', es: 'Destilados Artesanales' }, category: 'editorial', size: 'size-wide', image: '/portfolio/9.png' },
-  { id: 10, title: { en: 'Noir Beauty', es: 'Belleza Noir' }, category: 'editorial', size: 'size-wide', image: '/portfolio/10.png' }
+  { id: 1, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-1.png', featured: true },
+  { id: 11, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-11.jpeg', featured: true },
+  { id: 12, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-12.jpeg', featured: true },
+  { id: 2, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-2.png', featured: true },
+  { id: 13, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-13.jpeg', featured: true },
+  { id: 14, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-14.jpeg', featured: true },
+  { id: 3, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-3.png', featured: true },
+  { id: 15, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-15.jpeg', featured: true },
+  { id: 16, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-16.jpeg', featured: false },
+  { id: 4, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-4.png', featured: true },
+  { id: 17, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-17.jpeg', featured: false },
+  { id: 18, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-18.jpeg', featured: false },
+  { id: 5, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-5.png', featured: true },
+  { id: 19, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-19.jpeg', featured: false },
+  { id: 20, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-20.jpeg', featured: true },
+  { id: 6, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-6.png', featured: true },
+  { id: 21, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-21.jpeg', featured: false },
+  { id: 22, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-22.jpeg', featured: false },
+  { id: 7, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-7.png', featured: true },
+  { id: 23, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-23.jpeg', featured: false },
+  { id: 24, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-24.jpeg', featured: false },
+  { id: 8, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-8.png', featured: true },
+  { id: 25, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-25.jpeg', featured: true },
+  { id: 26, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-26.jpeg', featured: false },
+  { id: 9, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-9.png', featured: true },
+  { id: 27, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-27.jpeg', featured: false },
+  { id: 28, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-28.jpg', featured: false },
+  { id: 10, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-wide', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-10.png', featured: true },
+  { id: 29, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-29.jpeg', featured: false },
+  { id: 30, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-30.jpeg', featured: true },
+  { id: 31, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-31.jpg', featured: false },
+  { id: 32, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-32.jpeg', featured: false },
+  { id: 33, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-33.jpeg', featured: false },
+  { id: 34, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-34.jpeg', featured: false },
+  { id: 35, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-35.jpeg', featured: true },
+  { id: 36, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-36.jpeg', featured: false },
+  { id: 37, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-37.jpeg', featured: false },
+  { id: 38, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-38.jpeg', featured: false },
+  { id: 39, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-39.jpeg', featured: false },
+  { id: 40, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-40.jpeg', featured: true },
+  { id: 41, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-41.jpeg', featured: false },
+  { id: 42, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-42.jpeg', featured: false },
+  { id: 43, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-43.jpeg', featured: false },
+  { id: 44, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-44.jpeg', featured: false },
+  { id: 45, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-45.jpeg', featured: true },
+  { id: 46, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-46.jpeg', featured: false },
+  { id: 47, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-47.jpeg', featured: false },
+  { id: 48, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-48.jpeg', featured: false },
+  { id: 49, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-49.jpeg', featured: false },
+  { id: 50, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-50.jpeg', featured: true },
+  { id: 51, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-51.jpeg', featured: false },
+  { id: 52, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-52.jpeg', featured: false },
+  { id: 53, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-53.jpeg', featured: false },
+  { id: 54, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-54.jpeg', featured: false },
+  { id: 55, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-55.jpeg', featured: true },
+  { id: 56, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-56.jpeg', featured: false },
+  { id: 57, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-57.jpeg', featured: false },
+  { id: 58, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-58.jpg', featured: false },
+  { id: 59, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-59.jpg', featured: false },
+  { id: 60, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-60.jpg', featured: true },
+  { id: 61, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-61.jpg', featured: false },
+  { id: 62, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-62.jpg', featured: false },
+  { id: 63, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-63.jpg', featured: false },
+  { id: 64, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-64.jpg', featured: false },
+  { id: 65, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-65.jpg', featured: true },
+  { id: 66, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-66.jpg', featured: false },
+  { id: 67, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-67.jpg', featured: false },
+  { id: 68, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-68.jpg', featured: false },
+  { id: 69, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-69.jpg', featured: false },
+  { id: 70, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-70.jpg', featured: true },
+  { id: 71, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-71.jpg', featured: false },
+  { id: 72, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-72.jpg', featured: false },
+  { id: 73, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-73.jpg', featured: false },
+  { id: 74, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-74.jpg', featured: false },
+  { id: 75, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-75.jpg', featured: true },
+  { id: 76, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-76.jpg', featured: false },
+  { id: 77, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-77.jpg', featured: false },
+  { id: 78, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-78.jpg', featured: false },
+  { id: 79, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-79.jpg', featured: false },
+  { id: 80, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-80.jpg', featured: true },
+  { id: 81, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-81.jpg', featured: false },
+  { id: 82, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-82.jpg', featured: false },
+  { id: 83, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-83.jpg', featured: false },
+  { id: 84, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-84.jpg', featured: false },
+  { id: 85, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-85.jpg', featured: true },
+  { id: 86, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-86.jpg', featured: false },
+  { id: 87, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-87.jpg', featured: false },
+  { id: 88, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-88.jpg', featured: false },
+  { id: 89, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-89.jpg', featured: false },
+  { id: 90, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-90.jpg', featured: true },
+  { id: 91, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-91.jpg', featured: false },
+  { id: 92, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-92.jpg', featured: false },
+  { id: 93, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-93.jpg', featured: false },
+  { id: 94, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-94.jpg', featured: false },
+  { id: 95, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-95.jpg', featured: true },
+  { id: 96, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-96.jpg', featured: false },
+  { id: 97, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-97.jpg', featured: false },
+  { id: 98, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-98.jpg', featured: false },
+  { id: 99, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-99.jpg', featured: false },
+  { id: 100, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-100.jpg', featured: true },
+  { id: 101, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-101.jpg', featured: false },
+  { id: 102, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-102.jpg', featured: false },
+  { id: 103, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-103.jpg', featured: false },
+  { id: 104, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-104.jpg', featured: false },
+  { id: 105, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-105.jpg', featured: true },
+  { id: 106, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-106.jpg', featured: false },
+  { id: 107, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-107.jpg', featured: false },
+  { id: 108, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-108.jpg', featured: false },
+  { id: 109, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-109.jpg', featured: false },
+  { id: 110, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-110.jpg', featured: true },
+  { id: 111, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-111.jpg', featured: false },
+  { id: 112, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-112.jpg', featured: false },
+  { id: 113, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-113.jpg', featured: false },
+  { id: 114, title: { en: 'Commercial Brand Lifestyle', es: 'Commercial Brand Lifestyle' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-commercial-brand-lifestyle-114.jpg', featured: false },
+  { id: 115, title: { en: 'Fine Dining Restaurant Shoot', es: 'Fine Dining Restaurant Shoot' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-fine-dining-restaurant-shoot-115.jpg', featured: true },
+  { id: 116, title: { en: 'Real Estate Property Photography', es: 'Bienes Raíces Property Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-real-estate-property-photography-116.jpg', featured: false },
+  { id: 117, title: { en: 'Chef Portrait Editorial', es: 'Chef Portrait Editorial' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-chef-portrait-editorial-117.jpg', featured: false },
+  { id: 118, title: { en: 'Boutique Hotel Interior', es: 'Boutique Hotel Interior' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-boutique-hotel-interior-118.jpg', featured: false },
+  { id: 119, title: { en: 'Modern Living Residential', es: 'Modern Living Residential' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-modern-living-residential-119.jpg', featured: false },
+  { id: 120, title: { en: 'High End Hospitality Photography', es: 'High End Hospitality Fotografía' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-high-end-hospitality-photography-120.jpg', featured: true },
+  { id: 121, title: { en: 'Editorial Food Photographer', es: 'Editorial Comida Fotógrafo' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-editorial-food-photographer-121.jpg', featured: false },
+  { id: 122, title: { en: 'Luxury Hotel Photography Monterrey', es: 'Lujo Hotel Fotografía Monterrey' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-luxury-hotel-photography-monterrey-122.jpg', featured: false },
+  { id: 123, title: { en: 'Architectural Interior Design', es: 'Architectural Interior Design' }, category: 'editorial', size: 'size-tall', image: '/portfolio/editorial/andrea-palacio-architectural-interior-design-123.jpg', featured: false },
 ];
 
 const categoryLabels = {
@@ -44,6 +147,8 @@ let filteredItems = [];
 let lastFocusedElement = null;
 const preloadedImages = new Set();
 const eagerImageCount = 6;
+let displayedCount = 18;
+const ITEMS_PER_PAGE = 18;
 
 /**
  * Initialize portfolio gallery
@@ -53,6 +158,15 @@ export function initGallery() {
   renderPortfolio();
   setupFilters();
   setupLightbox();
+
+  // Setup load more
+  const loadMoreBtn = document.getElementById('portfolio-load-more');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      displayedCount += ITEMS_PER_PAGE;
+      renderPortfolio();
+    });
+  }
 
   // Re-render on language change
   window.addEventListener('langchange', () => {
@@ -94,12 +208,14 @@ function renderPortfolio() {
 
   const lang = getLang();
   const items = currentFilter === 'all'
-    ? portfolioData
+    ? portfolioData.filter(p => p.featured)
     : portfolioData.filter(p => p.category === currentFilter);
 
   filteredItems = items;
 
-  grid.innerHTML = items.map((item, index) => `
+    const paginatedItems = items.slice(0, displayedCount);
+
+  grid.innerHTML = paginatedItems.map((item, index) => `
     <div class="portfolio-item ${item.size}" 
          data-category="${item.category}" 
          data-index="${index}"
@@ -131,6 +247,15 @@ function renderPortfolio() {
       }
     });
   });
+
+  const loadMoreBtn = document.getElementById('portfolio-load-more');
+  if (loadMoreBtn) {
+    if (displayedCount < items.length) {
+      loadMoreBtn.style.display = 'inline-flex';
+    } else {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
 }
 
 /**
@@ -152,6 +277,7 @@ function setupFilters() {
 
     currentFilter = btn.dataset.filter;
     syncFilterAccessibility(filterContainer);
+    displayedCount = ITEMS_PER_PAGE;
     renderPortfolio();
   });
 }
