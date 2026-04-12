@@ -95,8 +95,9 @@ export function initParallax() {
 
         if (scrollY < heroHeight) {
           const progress = scrollY / heroHeight;
-          hero.style.opacity = 1 - progress * 1.2;
-          hero.style.transform = `translateY(${scrollY * 0.3}px)`;
+          // Disable parallax movement and fade-out as requested
+          // hero.style.opacity = 1 - progress * 1.2;
+          // hero.style.transform = `translateY(${scrollY * 0.3}px)`;
         }
 
         ticking = false;
