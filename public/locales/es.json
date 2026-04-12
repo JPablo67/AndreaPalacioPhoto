@@ -176,6 +176,7 @@
       "location_placeholder": "Selecciona ubicación...",
       "location_other": "Otro",
       "date": "Fecha del Proyecto",
+      "preferred_date": "Fecha Preferida (Opcional)",
       "budget": "Presupuesto Estimado",
       "budget_placeholder": "Selecciona rango...",
       "details": "Cuéntame sobre tu proyecto (Opcional)",

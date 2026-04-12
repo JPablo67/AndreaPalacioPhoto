@@ -176,6 +176,7 @@
       "location_placeholder": "Select location...",
       "location_other": "Other",
       "date": "Project Timeline",
+      "preferred_date": "Preferred Date (Optional)",
       "budget": "Budget Range",
       "budget_placeholder": "Select range...",
       "details": "Tell me about your project (Optional)",
