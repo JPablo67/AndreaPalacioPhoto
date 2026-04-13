@@ -27,7 +27,8 @@
     "headline": "Elevated Visual<br>Storytelling",
     "subheadline": "Premium editorial, hospitality, and commercial photography across Monterrey, MX and Houston, TX.",
     "cta_primary": "Commission a Campaign",
-    "cta_secondary": "View Portfolio"
+    "cta_secondary": "View Portfolio",
+    "trusted_by": "Trusted by global brands & publications"
   },
   "portfolio": {
     "label": "Selected Work",
@@ -182,8 +183,8 @@
       "location_other": "Other",
       "date": "Project Timeline",
       "preferred_date": "Preferred Date (Optional)",
-      "budget": "Budget Range",
-      "budget_placeholder": "Select range...",
+      "budget": "Estimated Project Budget *",
+      "budget_placeholder": "Select a budget range",
       "details": "Tell me about your project (Optional)",
       "referral": "How did you find me?",
       "referral_placeholder": "Select...",

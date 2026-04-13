@@ -27,7 +27,8 @@
     "headline": "Fotografía<br>Editorial",
     "subheadline": "Llevando la estética de alta gama a la hospitalidad, arquitectura y moda en Monterrey y Houston.",
     "cta_primary": "Cotiza tu Proyecto",
-    "cta_secondary": "Ver Portafolio"
+    "cta_secondary": "Ver Portafolio",
+    "trusted_by": "Trabajando con marcas y publicaciones globales"
   },
   "portfolio": {
     "label": "Trabajo Seleccionado",
@@ -182,8 +183,8 @@
       "location_other": "Otro",
       "date": "Fecha del Proyecto",
       "preferred_date": "Fecha Preferida (Opcional)",
-      "budget": "Presupuesto Estimado",
-      "budget_placeholder": "Selecciona rango...",
+      "budget": "Presupuesto Estimado del Proyecto *",
+      "budget_placeholder": "Selecciona un rango de presupuesto",
       "details": "Cuéntame sobre tu proyecto (Opcional)",
       "referral": "¿Cómo me encontraste?",
       "referral_placeholder": "Selecciona...",

@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Array of your newly copied optimized images in the public folder
   const images = [
-    { src: '/hero/slide-1.webp' },
-    { src: '/hero/slide-2.webp' },
-    { src: '/hero/slide-3.webp' },
-    { src: '/hero/slide-4.webp' },
-    { src: '/hero/slide-5.webp', position: 'center 18%' }
+    { src: '/hero/andrea-palacio-houston-monterrey-photographer-1.webp' },
+    { src: '/hero/andrea-palacio-houston-monterrey-photographer-2.webp' },
+    { src: '/hero/andrea-palacio-houston-monterrey-photographer-3.webp' },
+    { src: '/hero/andrea-palacio-houston-monterrey-photographer-4.webp' },
+    { src: '/hero/andrea-palacio-houston-monterrey-photographer-5.webp', position: 'center 18%' }
   ];
 
   let currentSlide = 0;

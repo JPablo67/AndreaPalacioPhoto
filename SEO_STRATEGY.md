@@ -36,16 +36,16 @@ Increase high-intent leads and bookings across two tiers of services:
 ## 3. PRIORITIZED ACTION PLAN
 
 ### Phase 1: High Impact / Low Effort (Days 1–14)
-- [ ] **Implement `hreflang` Tags:** Add `<link rel="alternate" hreflang="es-MX" href="...">` and `<link rel="alternate" hreflang="en-US" href="...">` to the `<head>` to ensure Google serves the correct language version natively.
+- [x] **Implement `hreflang` Tags:** Add `<link rel="alternate" hreflang="es-MX" href="...">` and `<link rel="alternate" hreflang="en-US" href="...">` to the `<head>` to ensure Google serves the correct language version natively.
 - [ ] **Google Business Profiles:** Claim and verify two separate GBP listings (Monterrey and Houston). Link them to your domain.
-- [ ] **Copy/Locale Update:** Overhaul the `en.json` and `es.json` files using the premium copywriting and keywords outlined below.
+- [x] **Copy/Locale Update:** Overhaul the `en.json` and `es.json` files using the premium copywriting and keywords outlined below.
 
 ### Phase 2: Medium Impact / Medium Effort (Days 14–30)
-- [ ] **Deploy Dedicated Location Pages:** Build hidden, hyper-targeted landing pages (`/houston` and `/monterrey`) designed purely to capture localized organic search intent without diluting the artistic purity of your main homepage.
-- [ ] **Add Trust Signals:** Inject a "Selected Clients" or "Featured In" logo banner just below the hero section on the homepage to instantly build premium authority.
+- [x] **Deploy Dedicated Location Pages:** Build hidden, hyper-targeted landing pages (`/houston` and `/monterrey`) designed purely to capture localized organic search intent without diluting the artistic purity of your main homepage.
+- [x] **Add Trust Signals:** Inject a "Selected Clients" or "Featured In" logo banner just below the hero section on the homepage to instantly build premium authority.
 
 ### Phase 3: Long-Term Growth (Ongoing)
-- [ ] **Blog Content Strategy:** Roll out the high-intent localized blog articles.
+- [x] **Blog Content Strategy:** Roll out the high-intent localized blog articles.
 - [ ] **Local Link Building:** Acquire backlinks from Monterrey lifestyle magazines, Houston real estate groups, and hospitality PR agencies.
 
 ---

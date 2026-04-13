@@ -14,6 +14,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        houston: resolve(__dirname, 'houston/index.html'),
+        monterrey: resolve(__dirname, 'monterrey/index.html'),
         blog: resolve(__dirname, 'blog/index.html'),
         hotelPhotographyBookings: resolve(__dirname, 'blog/hotel-photography-bookings/index.html'),
         hiringRealEstatePhotographer: resolve(__dirname, 'blog/hiring-real-estate-photographer/index.html'),
