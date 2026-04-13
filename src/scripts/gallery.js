@@ -296,12 +296,14 @@ function setupLightbox() {
   const closeBtn = document.getElementById('lightbox-close');
   const prevBtn = document.getElementById('lightbox-prev');
   const nextBtn = document.getElementById('lightbox-next');
+  const ctaBtn = document.getElementById('lightbox-cta');
 
   if (!lightbox) return;
 
   closeBtn?.addEventListener('click', closeLightbox);
   prevBtn?.addEventListener('click', () => navigateLightbox(-1));
   nextBtn?.addEventListener('click', () => navigateLightbox(1));
+  ctaBtn?.addEventListener('click', closeLightbox);
 
   // Close on backdrop click
   lightbox.addEventListener('click', (e) => {
