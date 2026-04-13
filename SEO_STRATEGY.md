@@ -101,35 +101,26 @@ Increase high-intent leads and bookings across two tiers of services:
 
 ---
 
-## 6. LOCAL SEO & LANDING PAGE STRATEGY
+## 6. LOCAL SEO & LANDING PAGE STRATEGY (IMPLEMENTED)
 
-To rank aggressively while keeping the main homepage clean, build **Invisible Local Landing Pages** that sit in your sitemap but aren't in the primary navigation.
+To rank aggressively while keeping the main homepage clean, we built **Invisible Local Landing Pages** that sit in your sitemap but aren't in the primary navigation.
 
-### Landing Page Outline: `/houston` (and equivalent for `/monterrey`)
-* **URL:** `andreapalacio.art/houston-commercial-photographer`
-* **Meta Title:** Luxury Commercial & Editorial Photographer Houston | Andrea Palacio
-* **Hero Image:** A striking Houston-based architectural or fashion shot.
-* **H1:** Houston’s Premier Editorial & Commercial Photographer
-* **Body Structure:**
-  1. *Introduction:* Highlighting your dual-base nature and global aesthetic brought to the Texas market.
-  2. *Services Grid:* Filtered specifically for Houston priorities (Real Estate, Restaurants, Brand Campaigns).
-  3. *Local Portfolio:* A curated grid of only USA/Texan clients.
-  4. *Social Proof:* Testimonials from Houston-based agencies or brands.
-  5. *Aggressive CTA:* "Book a Houston Consultation."
-
-*(Duplicate this exact structure for `/monterrey-fotografo-comercial` in Spanish, optimizing for San Pedro Garza García and Monterrey keywords).*
+### Landing Pages Built: `/houston` & `/monterrey`
+- [x] **Lightweight Architecture:** Stripped out generic JS modules.
+- [x] **Hardcoded SEO:** H1, Subheadline, and Title tags injected aggressively into the DOM (e.g. `houston/index.html`).
+- [x] **Internal Link Structure:** Hidden directory URLs injected into the main `index.html` footer so crawlers can easily access and index the isolated pages.
 
 ---
 
-## 7. TECHNICAL SEO IMPROVEMENTS (NEXT STEPS)
+## 7. TECHNICAL SEO IMPROVEMENTS (IMPLEMENTED)
 
-1. **Multi-Language Routing (CRITICAL):** Google bots struggle to index JS-swapped languages from JSONs. Structure the site so Google sees `andreapalacio.art/en/` and `andreapalacio.art/es/` as completely distinct routes.
-2. **Schema.org LocalBusiness Markup:** Inject JSON-LD structured data into the `<head>` that explicitly tells Google you operate from two distinct physical locations.
-3. **Advanced Image SEO:** Rename current `.webp` files from generic naming (`1.webp`) to semantic filenames (`luxury-hotel-photographer-houston.webp`) to capture rich results in Google Image Search.
+- [x] **Multi-Language Routing (CRITICAL):** Google bots struggle to index JS-swapped languages from JSONs. Structured the site so Google sees `andreapalacio.art/?lang=en` and `andreapalacio.art/?lang=es` as completely distinct routes via `hreflang` tags.
+- [x] **Schema.org LocalBusiness Markup:** Injected JSON-LD structured data into the `<head>` that explicitly tells Google you operate from two distinct physical locations.
+- [x] **Advanced Image SEO:** Renamed previous `.webp` hero files from generic naming (`1.webp`) to semantic filenames (`andrea-palacio-houston-monterrey-photographer-1.webp`) to capture rich results in Google Image Search.
 
 ---
 
-## 8. CONTENT STRATEGY (BLOG PIPELINE)
+## 8. CONTENT STRATEGY (BLOG PIPELINE - SCAFFOLDED)
 Blogs act as honeytraps for corporate clients searching for solutions.
 
 **Article 1: For the Hospitality/Real Estate Client**
@@ -154,3 +145,9 @@ Blogs act as honeytraps for corporate clients searching for solutions.
 * **Frictionless Booking:** Change vague CTAs like "Contact Me" to decisive commands: **"Commission a Campaign"** or **"Book Your Shoot."** (Already applied to `nav-cta`).
 * **Client Roster (Trust Signals):** Add a subtle, greyscale logo strip under the homepage hero: *"Trusted by: [Brand A] | [Hotel B] | [Magazine C]"* to establish immediate visual credibility.
 * **Investment Anchoring:** On the contact form, consider adding a dropdown for "Project Budget" (e.g., "$1k - $3k", "$3k - $5k", "$10k+"). This filters out low-budget inquiries and establishes a premium baseline instantly.
+## 9. OFF-PAGE SEO & MANUAL TASKS (PENDING)
+*These tasks must be executed manually to finalize the local ranking strategy.*
+
+- [ ] **Google Business Profile (Monterrey):** Register/verify listing matching `Fotografía Comercial/Servicio Profesional`. Add `https://andreapalacio.art/?lang=es` as website.
+- [ ] **Google Business Profile (Houston):** Register/verify a Service Area Business matching `Commercial Photographer/Establishment`. Add `https://andreapalacio.art/?lang=en` as website.
+- [ ] **Local Citations:** Ensure name, phone number, and website are consistent across initial business directories (Yelp, YellowPages, local wedding/business directories).

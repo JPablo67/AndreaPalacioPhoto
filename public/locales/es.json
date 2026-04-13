@@ -183,8 +183,6 @@
       "location_other": "Otro",
       "date": "Fecha del Proyecto",
       "preferred_date": "Fecha Preferida (Opcional)",
-      "budget": "Presupuesto Estimado del Proyecto *",
-      "budget_placeholder": "Selecciona un rango de presupuesto",
       "details": "Cuéntame sobre tu proyecto (Opcional)",
       "referral": "¿Cómo me encontraste?",
       "referral_placeholder": "Selecciona...",
