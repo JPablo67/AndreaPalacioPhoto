@@ -770,7 +770,8 @@ html[data-theme="light"] .hero-ctas .btn-ghost:hover {
 .about-portrait {
   width: 100%;
   aspect-ratio: 3 / 4;
-  background: linear-gradient(135deg, #2a2a3e 0%, #1a1a2e 100%);
+  background-image: url('/about/AP.webp');
+  background-color: #1a1a2e;
   border-radius: var(--radius-lg);
   background-size: cover;
   background-position: center;

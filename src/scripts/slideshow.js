@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Array of your newly copied optimized images in the public folder
   const images = [
-    { src: '/hero/slide-1.jpeg' },
-    { src: '/hero/slide-2.jpeg' },
-    { src: '/hero/slide-3.jpeg' },
-    { src: '/hero/slide-4.jpeg' },
-    { src: '/hero/slide-5.jpeg', position: 'center 18%' }
+    { src: '/hero/slide-1.webp' },
+    { src: '/hero/slide-2.webp' },
+    { src: '/hero/slide-3.webp' },
+    { src: '/hero/slide-4.webp' },
+    { src: '/hero/slide-5.webp', position: 'center 18%' }
   ];
 
   let currentSlide = 0;

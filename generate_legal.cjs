@@ -1,0 +1,108 @@
+const fs = require('fs');
+
+const generateLegalPage = (title, metaTitle, bodyHtml) => `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${metaTitle} | Andrea Palacio Photography</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    
+    <!-- PWA / Favicon Metadata -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <style>
+      .legal-container {
+        max-width: 800px;
+        margin: 120px auto;
+        padding: 0 5%;
+        color: var(--color-light);
+      }
+      .legal-container h1 {
+        font-family: var(--font-primary);
+        font-weight: 300;
+        margin-bottom: 2rem;
+        letter-spacing: -0.02em;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
+      .legal-container h2 {
+        font-family: var(--font-primary);
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        letter-spacing: -0.01em;
+      }
+      .legal-container p, .legal-container li {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        opacity: 0.8;
+      }
+      .btn-back {
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--color-accent);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .btn-back:hover { color: var(--color-light); }
+    </style>
+</head>
+<body style="background-color: var(--color-bg); margin: 0; min-height: 100vh;">
+
+  <!-- Header minimal -->
+  <header style="padding: 2rem 5%; border-bottom: 1px solid rgba(244, 241, 235, 0.1);">
+    <a href="/" style="color: var(--color-light); text-decoration: none; font-family: var(--font-primary); font-size: 1.5rem; letter-spacing: -0.02em;">AP</a>
+  </header>
+
+  <main class="legal-container">
+    <h1>${title}</h1>
+    <p><em>Last updated: April 13, 2026</em></p>
+    
+    ${bodyHtml}
+    
+    <a href="/" class="btn-back">&larr; Return to Home</a>
+  </main>
+
+</body>
+</html>
+`;
+
+const privacyHtml = `
+    <h2>1. Information We Collect</h2>
+    <p>We collect information you explicitly provide to us when submitting inquiries through our contact form, including your name, email address, phone number, and any project details.</p>
+    
+    <h2>2. How We Use Your Information</h2>
+    <p>Your information is used strictly to respond to your inquiries, schedule services, and provide customer support. We evaluate our site traffic via Google Analytics to improve user experience.</p>
+    
+    <h2>3. Data Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. Data is processed securely via Resend and Google Analytics.</p>
+
+    <h2>4. Contact Us</h2>
+    <p>If you have any questions regarding this privacy policy, please contact us at andy@andreapalacio.art.</p>
+`;
+
+const termsHtml = `
+    <h2>1. Website Usage</h2>
+    <p>By accessing the website at andreapalacio.art, you are agreeing to be bound by these terms of service, all applicable laws and regulations.</p>
+    
+    <h2>2. Intellectual Property</h2>
+    <p>All photographs, images, text, and design elements on this site are the intellectual property of Andrea Palacio Photography and are protected by applicable copyright and trademark law. Unauthorized use or reproduction is strictly prohibited.</p>
+    
+    <h2>3. Bookings & Services</h2>
+    <p>Inquiries submitted via the site do not constitute a confirmed booking. Bookings are only finalized upon signed contracts and payment of standard non-refundable retainers as stipulated off-platform.</p>
+    
+    <h2>4. Modificatons</h2>
+    <p>We may revise these terms of service for its website at any time without notice.</p>
+`;
+
+fs.writeFileSync('privacy.html', generateLegalPage('Privacy Policy', 'Privacy Policy', privacyHtml));
+fs.writeFileSync('terms.html', generateLegalPage('Terms and Conditions', 'Terms & Conditions', termsHtml));
+console.log('Legal pages created (privacy.html and terms.html)');

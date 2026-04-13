@@ -39,7 +39,7 @@ cat > .env.production <<'EOF'
 WEB_PORT=3003
 PORT=8787
 RESEND_API_KEY=re_xxxxxxxxx
-INQUIRY_TO_EMAIL=hello@andreapalacio.art
+INQUIRY_TO_EMAIL=andy@andreapalacio.art
 INQUIRY_FROM_EMAIL=Andrea Palacio <inquiries@andreapalacio.art>
 INQUIRY_AUTOREPLY=true
 RATE_LIMIT_WINDOW_MS=900000

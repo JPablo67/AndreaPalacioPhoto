@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | Andrea Palacio</title>
+    <meta name="description" content="The page you are looking for does not exist." />
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPQE987K1F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XPQE987K1F');
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+
+    <style>
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: var(--space-xl);
+        background: var(--bg-primary);
+      }
+      .error-code {
+        font-family: var(--font-heading);
+        font-size: clamp(6rem, 15vw, 12rem);
+        line-height: 1;
+        margin-bottom: var(--space-md);
+        color: var(--text-primary);
+      }
+      .error-message {
+        font-size: 1.25rem;
+        color: var(--text-muted);
+        margin-bottom: var(--space-xl);
+        max-width: 500px;
+      }
+      .btn-back {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: var(--text-primary);
+        color: var(--bg-primary);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.875rem;
+        transition: opacity var(--duration-fast);
+      }
+      .btn-back:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <h1 class="error-code">404</h1>
+      <p class="error-message">The page you are looking for has either been moved or no longer exists.</p>
+      <a href="/" class="btn-back">Return to Homepage</a>
+    </div>
+  </body>
+</html>

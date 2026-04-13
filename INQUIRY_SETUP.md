@@ -67,7 +67,7 @@ Restart=always
 RestartSec=5
 Environment=PORT=8787
 Environment=RESEND_API_KEY=re_xxxxxxxxx
-Environment=INQUIRY_TO_EMAIL=hello@andreapalacio.art
+Environment=INQUIRY_TO_EMAIL=andy@andreapalacio.art
 Environment=INQUIRY_FROM_EMAIL=Andrea Palacio <inquiries@andreapalacio.art>
 Environment=INQUIRY_AUTOREPLY=true
 

@@ -33,7 +33,7 @@ The backend service (`server/index.js`) is written to send inquiries via **Resen
   - Generate an API Key.
 - [x] **Configure Variables**
   - Set `RESEND_API_KEY="..."`
-  - Set `INQUIRY_TO_EMAIL="andrea@andreapalacio.art"` (or whoever receives the leads).
+  - Set `INQUIRY_TO_EMAIL="andy@andreapalacio.art"` (or whoever receives the leads).
   - Set `INQUIRY_FROM_EMAIL="inquiry@andreapalacio.art"` (must be verified domain).
   - Ensure the production server/hosting provider (Vercel, Railway, Render, etc.) has these environment variables configured in its dashboard.
 
@@ -66,20 +66,20 @@ The site uses a basic `favicon.svg`. To look professional on all devices (especi
 Since this is a photography portfolio, image weight is the biggest threat to Core Web Vitals and load times.
 
 ### To-Do:
-- [ ] **Next-Gen Formats (WebP / AVIF)**
+- [x] **Next-Gen Formats (WebP / AVIF)**
   - Audit all JPEGs/PNGs in `public/hero` and `public/portfolio`.
   - Compress and convert heavy assets into `.webp` or `.avif`.
-- [ ] **Responsive Image Implementation**
+- [x] **Responsive Image Implementation**
   - Update `<img>` tags to use `srcset` or `<picture>` elements, allowing mobile devices to download smaller resolution files instead of 4K desktop images.
   - Ensure all `<img>` tags have explicit `width`, `height`, and `loading="lazy"` (where appropriate) attributes to prevent Cumulative Layout Shift (CLS).
 
 ---
 
 ## 6. Pre-Launch Housekeeping
-- [ ] **Accessibility (a11y) Audit**
+- [x] **Accessibility (a11y) Audit**
   - Verify all form inputs have associated `<label>` attributes and aria-roles.
   - Verify color contrast passing ratios.
-- [ ] **404 / Error Pages**
+- [x] **404 / Error Pages**
   - Create a custom lightweight `404.html` page consistent with the brand's aesthetic.
-- [ ] **Legal / Privacy**
+- [x] **Legal / Privacy**
   - Add a simple Privacy Policy / Terms & Conditions page or modal, which is often required by Meta/Google if running paid ads.
