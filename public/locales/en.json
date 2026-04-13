@@ -15,7 +15,7 @@
     "about": "About",
     "journal": "Journal",
     "contact": "Contact",
-    "cta": "Book Now",
+    "cta": "Book Your Shoot",
     "editorial": "Editorial & Fashion",
     "hospitality": "Hotels & Hospitality",
     "food": "Restaurants & Food",
@@ -25,8 +25,8 @@
   "hero": {
     "eyebrow": "Editorial Expertise for Commercial Brands",
     "headline": "Elevated Visual<br>Storytelling",
-    "subheadline": "Bringing magazine-quality aesthetics to hospitality, real estate, and lifestyle brands across Monterrey & Houston.",
-    "cta_primary": "Book Now",
+    "subheadline": "Premium editorial, hospitality, and commercial photography across Monterrey, MX and Houston, TX.",
+    "cta_primary": "Commission a Campaign",
     "cta_secondary": "View Portfolio"
   },
   "portfolio": {
@@ -49,23 +49,28 @@
     "learn_more": "Learn More →",
     "editorial": {
       "title": "Editorial & Fashion",
-      "desc": "High-end editorial portraits, fashion lookbooks, and beauty campaigns that command attention."
+      "desc": "High-end editorial portraits, fashion lookbooks, and beauty campaigns that command attention.",
+      "description": "Striking Editorial Campaigns. Bold, narrative-driven fashion and brand photography designed for publications, lookbooks, and global campaigns."
     },
     "hospitality": {
-      "title": "Boutique Hospitality",
-      "desc": "Moving beyond standard room shots. We capture the curated atmosphere, the luxury details, and the genuine lifestyle experience that compels guests to book."
+      "title": "Hotels & Hospitality",
+      "desc": "Moving beyond standard room shots. We capture the curated atmosphere, the luxury details, and the genuine lifestyle experience that compels guests to book.",
+      "description": "Immersive Hospitality Photography. Translate the luxury of your space into imagery that drives high-tier bookings. Tailored for boutique hotels, resorts, and elite properties in Houston and Monterrey."
     },
     "food": {
-      "title": "Culinary Experiences",
-      "desc": "Capturing the heat of the kitchen and the ambiance of the dining room. We style food and spaces with an artistic, editorial eye that makes menus irresistible."
+      "title": "Restaurants & Food",
+      "desc": "Capturing the heat of the kitchen and the ambiance of the dining room. We style food and spaces with an artistic, editorial eye that makes menus irresistible.",
+      "description": "Culinary Visuals that Convert. We don't just photograph food; we craft the atmosphere of your dining experience. Essential for award-winning menus and high-end dining aesthetics."
     },
     "realestate": {
-      "title": "Architectural Aesthetics",
-      "desc": "Using fashion-inspired lighting and mood to transform real estate into aspirational living spaces. Perfect for luxury developments in San Pedro and exclusive Houston neighborhoods."
+      "title": "Real Estate & Architecture",
+      "desc": "Using fashion-inspired lighting and mood to transform real estate into aspirational living spaces. Perfect for luxury developments in San Pedro and exclusive Houston neighborhoods.",
+      "description": "Luxury Real Estate Photographer. High-end property coverage showcasing scale, design, and light for prestige developments."
     },
     "brand": {
       "title": "Brand Campaigns",
-      "desc": "Leveraging years of fashion photography experience to cast your product in a highly polished, narrative-driven campaign designed to convert."
+      "desc": "Leveraging years of fashion photography experience to cast your product in a highly polished, narrative-driven campaign designed to convert.",
+      "description": "Commercial brand photography engineered to position your business as a market leader."
     },
     "content": {
       "title": "Content Creation",

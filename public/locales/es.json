@@ -15,7 +15,7 @@
     "about": "Acerca",
     "journal": "Blog",
     "contact": "Contacto",
-    "cta": "Reservar Ahora",
+    "cta": "Reservar Sesión",
     "editorial": "Editorial y Moda",
     "hospitality": "Hoteles y Hospitalidad",
     "food": "Restaurantes y Gastronomía",
@@ -23,10 +23,10 @@
     "brand": "Campañas de Marca"
   },
   "hero": {
-    "eyebrow": "Fotografía Editorial para Marcas Comerciales",
-    "headline": "Narrativa Visual<br>Elevada",
-    "subheadline": "Llevando la estética de alta gama a la hospitalidad, bienes raíces y marcas de estilo de vida en Monterrey y Houston.",
-    "cta_primary": "Reservar Ahora",
+    "eyebrow": "Narrativa Visual de Alto Nivel para Marcas",
+    "headline": "Fotografía<br>Editorial",
+    "subheadline": "Llevando la estética de alta gama a la hospitalidad, arquitectura y moda en Monterrey y Houston.",
+    "cta_primary": "Cotiza tu Proyecto",
     "cta_secondary": "Ver Portafolio"
   },
   "portfolio": {
@@ -48,24 +48,29 @@
     "subtitle": "Contenido visual premium que eleva tu marca e impulsa resultados.",
     "learn_more": "Más Información →",
     "editorial": {
-      "title": "Editorial y Moda",
-      "desc": "Retratos editoriales de alta gama, lookbooks de moda y campañas de belleza que capturan la atención."
+      "title": "Fotografía Editorial y de Moda",
+      "desc": "Retratos editoriales de alta gama, lookbooks de moda y campañas de belleza que capturan la atención.",
+      "description": "Campañas Editoriales Impactantes. Fotografía de moda y marca audaz, narrativa y diseñada para publicaciones, lookbooks y campañas globales. El fotógrafo de moda premier en Monterrey San Pedro."
     },
     "hospitality": {
-      "title": "Hospitalidad Boutique",
-      "desc": "Más allá de las fotos estándar. Capturamos la atmósfera, los detalles de lujo y la experiencia de estilo de vida que convence a los huéspedes de reservar."
+      "title": "Hoteles y Hospitalidad",
+      "desc": "Más allá de las fotos estándar. Capturamos la atmósfera, los detalles de lujo y la experiencia de estilo de vida que convence a los huéspedes de reservar.",
+      "description": "Fotografía Inmersiva de Hospitalidad. Traduce el lujo de tu espacio en imágenes que generan altos niveles de reservas. Diseñado para hoteles boutique, resorts y locaciones en Monterrey y Houston."
     },
     "food": {
-      "title": "Experiencias Culinarias",
-      "desc": "Capturando el calor de la cocina y el ambiente del comedor. Estilizamos platillos y espacios con un ojo artístico y editorial que hace los menús irresistibles."
+      "title": "Restaurantes y Alimentos",
+      "desc": "Capturando el calor de la cocina y el ambiente del comedor. Estilizamos platillos y espacios con un ojo artístico y editorial que hace los menús irresistibles.",
+      "description": "Visuales Culinarios que Convierten. No solo tomamos fotos gastronómicas; creamos la atmósfera de tu experiencia. Esencial para fotógrafo de restaurantes en Monterrey."
     },
     "realestate": {
-      "title": "Estética Arquitectónica",
-      "desc": "Utilizando iluminación inspirada en la moda para transformar bienes raíces en espacios aspiracionales. Ideal para desarrollos de lujo en San Pedro y exclusivas zonas de Houston."
+      "title": "Bienes Raíces y Arquitectura",
+      "desc": "Utilizando iluminación inspirada en la moda para transformar bienes raíces en espacios aspiracionales. Ideal para desarrollos de lujo en San Pedro y exclusivas zonas de Houston.",
+      "description": "Fotografía de Bienes Raíces de Lujo. Cobertura ininterrumpida que muestra la escala, diseño y luz para desarrolladores de prestigio."
     },
     "brand": {
       "title": "Campañas de Marca",
-      "desc": "Aprovechando años de experiencia en fotografía de moda para posicionar tu producto en una campaña pulida y narrativa diseñada para vender."
+      "desc": "Aprovechando años de experiencia en fotografía de moda para posicionar tu producto en una campaña pulida y narrativa diseñada para vender.",
+      "description": "Fotografía comercial diseñada para posicionar tu negocio."
     },
     "content": {
       "title": "Creación de Contenido",
