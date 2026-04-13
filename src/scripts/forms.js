@@ -143,6 +143,14 @@ async function handleSubmit(e) {
     statusEl.className = 'form-status success';
     form.reset();
 
+    // Trigger Google Analytics Conversion Tracking
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', {
+        event_category: 'inquiry',
+        event_label: data.type || 'unknown_project'
+      });
+    }
+
     // Remove error classes
     form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
   } catch (err) {
